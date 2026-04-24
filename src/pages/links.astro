@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Portefeuille – Liens" description="Toutes mes productions académiques et professionnelles">
+  <section>
+    <h1 class="text-3xl font-bold text-center mb-8">Portefeuille professionnel</h1>
+    
+    <div class="grid gap-4 max-w-2xl mx-auto">
+      <a href="https://zenodo.org" target="_blank" 
+         class="flex items-center gap-4 p-4 bg-white rounded-lg shadow hover:shadow-md transition border">
+        <span class="text-2xl">📄</span>
+        <div>
+          <h3 class="font-bold">Zenodo – Dépôt officiel</h3>
+          <p class="text-sm text-gray-500">Curriculum BAC Agro'Lab (DOI) et productions scientifiques</p>
+        </div>
+      </a>
+
+      <a href="https://substack.com" target="_blank" 
+         class="flex items-center gap-4 p-4 bg-white rounded-lg shadow hover:shadow-md transition border">
+        <span class="text-2xl">📝</span>
+        <div>
+          <h3 class="font-bold">Substack – Working papers</h3>
+          <p class="text-sm text-gray-500">Articles de recherche en cours de rédaction</p>
+        </div>
+      </a>
+
+      <a href="/blog" 
+         class="flex items-center gap-4 p-4 bg-white rounded-lg shadow hover:shadow-md transition border">
+        <span class="text-2xl">📖</span>
+        <div>
+          <h3 class="font-bold">Blog – Documentation DBR</h3>
+          <p class="text-sm text-gray-500">Design-Based Research : cycles, obstacles, itérations</p>
+        </div>
+      </a>
+
+      <a href="https://github.com" target="_blank" 
+         class="flex items-center gap-4 p-4 bg-white rounded-lg shadow hover:shadow-md transition border">
+        <span class="text-2xl">💻</span>
+        <div>
+          <h3 class="font-bold">GitHub – Code et BDI</h3>
+          <p class="text-sm text-gray-500">Base de Données Intelligente et scripts de collecte</p>
+        </div>
+      </a>
+
+      <a href="https://linkedin.com" target="_blank" 
+         class="flex items-center gap-4 p-4 bg-white rounded-lg shadow hover:shadow-md transition border">
+        <span class="text-2xl">🔗</span>
+        <div>
+          <h3 class="font-bold">LinkedIn – Parcours et recommandations</h3>
+          <p class="text-sm text-gray-500">Expériences, formations, recommandations d'anciens étudiants</p>
+        </div>
+      </a>
+
+      <a href="/docs/justificatifs-vapp.pdf" target="_blank" 
+         class="flex items-center gap-4 p-4 bg-blue-50 rounded-lg shadow hover:shadow-md transition border border-blue-200">
+        <span class="text-2xl">📁</span>
+        <div>
+          <h3 class="font-bold">Dossier VAPP – Justificatifs</h3>
+          <p class="text-sm text-gray-600">Lettres d'étudiants, relevés de notes, attestations (PDF)</p>
+        </div>
+      </a>
+    </div>
+  </section>
+</BaseLayout>
