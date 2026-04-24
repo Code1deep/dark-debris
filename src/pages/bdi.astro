@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Base de Données Intelligente – Preuve de concept" description="Documentation technique et accessible">
+  <section>
+    <h1 class="text-3xl font-bold mb-4">Base de Données Intelligente (BDI)</h1>
+    <p class="text-lg text-gray-600 mb-8">État d'avancement – Preuves tangibles – Accès aux dépôts</p>
+
+    <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-8">
+      <p class="font-bold">✅ La BDI n'est pas un concept abstrait</p>
+      <p>Elle est documentée, codée, et accessible via :</p>
+      <ul class="list-disc pl-6 mt-2">
+        <li>5 dépôts GitHub publics (scripts, schémas, documentation)</li>
+        <li>Jeux de données anonymisés sur Zenodo (DOI en cours)</li>
+        <li>Prototype opérationnel (données simulées, intégration capteurs en cours)</li>
+      </ul>
+    </div>
+
+    <h2 class="text-2xl font-bold mt-8 mb-4">📦 Dépôts GitHub</h2>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="border p-4 rounded">
+        <h3 class="font-bold">BDI-prototype</h3>
+        <p class="text-sm text-gray-600">Scripts Python (collecte simulée → réelle)</p>
+        <a href="https://github.com/Code1deep/BDI-prototype" class="text-blue-600 text-sm">github.com/Code1deep/BDI-prototype →</a>
+      </div>
+      <div class="border p-4 rounded">
+        <h3 class="font-bold">living-lab-sensors</h3>
+        <p class="text-sm text-gray-600">Code ESP32, calibration, MQTT</p>
+        <a href="https://github.com/Code1deep/living-lab-sensors" class="text-blue-600 text-sm">github.com/Code1deep/living-lab-sensors →</a>
+      </div>
+      <div class="border p-4 rounded">
+        <h3 class="font-bold">obstacle-detection</h3>
+        <p class="text-sm text-gray-600">Algorithmes d'identification des erreurs</p>
+        <a href="https://github.com/Code1deep/obstacle-detection" class="text-blue-600 text-sm">github.com/Code1deep/obstacle-detection →</a>
+      </div>
+      <div class="border p-4 rounded">
+        <h3 class="font-bold">dashboard</h3>
+        <p class="text-sm text-gray-600">Configuration Grafana, visualisation</p>
+        <a href="https://github.com/Code1deep/dashboard" class="text-blue-600 text-sm">github.com/Code1deep/dashboard →</a>
+      </div>
+      <div class="border p-4 rounded">
+        <h3 class="font-bold">docs</h3>
+        <p class="text-sm text-gray-600">Schémas d'architecture, documentation</p>
+        <a href="https://github.com/Code1deep/docs" class="text-blue-600 text-sm">github.com/Code1deep/docs →</a>
+      </div>
+    </div>
+
+    <h2 class="text-2xl font-bold mt-8 mb-4">📄 Zenodo – Jeux de données et publications</h2>
+    <div class="border p-4 rounded">
+      <p><strong>Collection personnelle</strong> (à créer)</p>
+      <ul class="list-disc pl-6 mt-2">
+        <li>Curriculum BAC Agro'Lab – DOI : 10.5281/zenodo.XXXXX</li>
+        <li>Jeux de données (traces d'apprentissage anonymisées) – À venir</li>
+        <li>Working papers – À venir</li>
+      </ul>
+      <a href="https://zenodo.org/communities/votre-communaute" class="text-blue-600 text-sm mt-2 inline-block">Accéder à Zenodo →</a>
+    </div>
+
+    <h2 class="text-2xl font-bold mt-8 mb-4">🔧 État d'avancement technique (2026-04)</h2>
+    <div class="space-y-2">
+      <div><span class="font-bold">✅</span> Architecture BDI définie (schémas disponibles sur GitHub/docs)</div>
+      <div><span class="font-bold">✅</span> Scripts de collecte fonctionnels (données simulées)</div>
+      <div><span class="font-bold">🟡</span> Intégration capteurs réels – en cours (calibration ESP32)</div>
+      <div><span class="font-bold">⬜</span> Déploiement dashboard public – prévu pour mai 2026</div>
+      <div><span class="font-bold">⬜</span> Jumeau numérique – version alpha prévue juin 2026</div>
+    </div>
+  </section>
+</BaseLayout>
