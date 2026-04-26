@@ -20,11 +20,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22  # Changement ici : v22 au lieu de v20
+          node-version: 22
           cache: 'npm'
       
       - name: Install dependencies
         run: npm ci
+      
+      - name: Install Tailwind CSS
+        run: npx astro add tailwind --yes
       
       - name: Build site
         run: npm run build
