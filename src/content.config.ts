@@ -6,7 +6,7 @@ const blogCollection = defineCollection({
     description: z.string(),
     keywords: z.string().optional(),
     ogImage: z.string().optional(),
-    pubDate: z.string(),
+    pubDate: z.date(),        // ← changé : string → date
     author: z.string().default("A. Elbah"),
   }),
 });
