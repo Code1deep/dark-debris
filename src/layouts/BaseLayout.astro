@@ -1,5 +1,7 @@
 ---
 // Structure commune à toutes les pages
+import Footer from '../components/Footer.astro';
+
 export interface Props {
   title: string;
   description?: string;
@@ -26,6 +28,7 @@ const { title, description } = Astro.props;
       <a href="/links" class="hover:text-blue-600">Portefeuille</a>
       <a href="/blog" class="hover:text-blue-600">Blog DBR</a>
       <a href="/projects" class="hover:text-blue-600">Projets</a>
+      <a href="/bibliotheque" class="hover:text-blue-600">Bibliothèque</a>
     </div>
   </nav>
 
@@ -35,19 +38,6 @@ const { title, description } = Astro.props;
   </main>
 
   <!-- Pied de page -->
-  <footer class="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500 text-sm border-t mt-12">
-    <p>© {new Date().getFullYear()} A. Elbah – Ingénieur-pédagogue</p>
-    <p class="mt-2">
-      <a href="/legal" class="hover:underline">Mentions légales</a> – 
-      <a href="https://github.com/votre-compte" class="hover:underline">GitHub</a> – 
-      <a href="https://linkedin.com/in/votre-compte" class="hover:underline">LinkedIn</a>
-      <a href="/bibliotheque" class="hover:underline">Bibliothèque</a>
-    </p>
-  ---
-  import Footer from '../components/Footer.astro';
-  ---
-
-  <!-- ... avant la fin de <body> ... -->
-  </footer>
+  <Footer />
 </body>
 </html>
