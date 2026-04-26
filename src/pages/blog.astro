@@ -1,5 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const articles = await getCollection('blog');
+articles.sort((a, b) => b.data.pubDate.localeCompare(a.data.pubDate));
 ---
 
 <BaseLayout title="Blog DBR" description="Documentation de ma démarche Design-Based Research">
@@ -8,33 +12,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <p class="text-center text-gray-500 mb-8">Cycles d'itération, obstacles cognitifs, analyses de terrain</p>
     
     <div class="grid gap-6 max-w-3xl mx-auto">
-      
-      <article class="border-b pb-6">
-        <h2 class="text-xl font-bold text-blue-800 mb-2">
-          <a href="/blog/pourquoi-laquaponie" class="hover:underline">Pourquoi l'aquaponie est un cas paradigmatique</a>
-        </h2>
-        <p class="text-gray-500 text-sm mb-2">24 avril 2026 – 5 min de lecture</p>
-        <p class="text-gray-700">L'aquaponie n'est pas choisie malgré sa complexité technique, mais en raison de trois propriétés didactiques qu'aucun système numérique ne possède simultanément...</p>
-        <a href="/blog/pourquoi-laquaponie" class="text-blue-600 text-sm mt-2 inline-block">Lire l'article →</a>
-      </article>
-
-      <article class="border-b pb-6">
-        <h2 class="text-xl font-bold text-blue-800 mb-2">
-          <a href="/blog/de-la-productique-a-la-didactique" class="hover:underline">De la productique à la didactique : 30 ans d'évolution</a>
-        </h2>
-        <p class="text-gray-500 text-sm mb-2">À venir – 7 min de lecture</p>
-        <p class="text-gray-700">Comment une formation initiale en productique (mécanique + informatique + algorithmique) a façonné une approche systémique de la pédagogie...</p>
-        <a href="/blog/de-la-productique-a-la-didactique" class="text-blue-600 text-sm mt-2 inline-block">Lire l'article →</a>
-      </article>
-
-      <article class="border-b pb-6">
-        <h2 class="text-xl font-bold text-blue-800 mb-2">
-          <a href="/blog/obstacles-cognitifs" class="hover:underline">Typologie des obstacles cognitifs en apprentissage des systèmes complexes</a>
-        </h2>
-        <p class="text-gray-500 text-sm mb-2">À venir – 8 min de lecture</p>
-        <p class="text-gray-700">Linéarité, temporalité, proportionnalité : comment ces obstacles se manifestent et comment la Base de Données Intelligente permet de les identifier...</p>
-        <a href="/blog/obstacles-cognitifs" class="text-blue-600 text-sm mt-2 inline-block">Lire l'article →</a>
-      </article>
+      {articles.map((article) => (
+        <article class="border-b pb-6">
+          <h2 class="text-xl font-bold text-blue-800 mb-2">
+            <a href={"/blog/" + article.slug} class="hover:underline">{article.data.title}</a>
+          </h2>
+          <p class="text-gray-500 text-sm mb-2">{article.data.pubDate} – 5 min de lecture</p>
+          <p class="text-gray-700">{article.data.description}</p>
+          <a href={"/blog/" + article.slug} class="text-blue-600 text-sm mt-2 inline-block">Lire l'article →</a>
+        </article>
+      ))}
     </div>
   </section>
 </BaseLayout>
