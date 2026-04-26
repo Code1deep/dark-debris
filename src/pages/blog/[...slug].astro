@@ -15,7 +15,7 @@ const { Content, headings } = await render(article);
 ---
 
 <BaseLayout title={article.data.title} description={article.data.description}>
-  <article class="prose prose-lg max-w-none mx-auto prose-headings:text-blue-800 prose-a:text-blue-600">
+  <article class="prose prose-lg max-w-none mx-auto prose-headings:text-blue-800 prose-a:text-blue-600 prose-strong:text-blue-900">
     <h1 class="text-3xl font-bold mb-4">{article.data.title}</h1>
     <p class="text-gray-500 border-l-4 border-blue-800 pl-4 mb-8">
       📅 {new Date(article.data.pubDate).toLocaleDateString('fr-FR')} – Par {article.data.author}
