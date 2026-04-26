@@ -3,7 +3,7 @@ title: "Apprendre la Productique : Quand l'Informatique devient le Cerveau de la
 description: "Comprendre les bases de la médiation machine via des analogies simples (voiture, rodage, motivation). Un guide accessible pour découvrir la productique."
 keywords: "initiation productique, pédagogie machine, bases informatique industrielle, vulgarisation technique"
 ogImage: "/images/schema-initiation.jpg"
-pubDate: "2026-04-24"
+pubDate: 2026-04-24
 author: "A. Elbah"
 ---
 

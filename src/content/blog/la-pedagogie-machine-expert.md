@@ -3,7 +3,7 @@ title: "Universalité du Flux : Vers une Architecture des Systèmes Complexes"
 description: "Analyse systémique et transformation de contexte : de la cinématique mécanique aux flux d'électrons, de trafic et de missiles via la BDI-prototype."
 keywords: "systèmes complexes, design-based research, BDI-prototype, flux stochastique, ingénierie de la donnée"
 ogImage: "/images/schema-expert-flux.jpg"
-pubDate: "2026-04-24"
+pubDate: 2026-04-24
 author: "A. Elbah"
 ---
 
