@@ -1,0 +1,105 @@
+<div class="border-4 border-slate-900 p-8 bg-green-50 shadow-[8px_8px_0px_0px_rgba(34,197,94,1)] my-12">
+  <h3 class="text-2xl font-black mb-2 uppercase italic">Test du Voyageur : Quel est votre indice de résilience ?</h3>
+  <p class="text-slate-600 mb-6">Évaluez votre capacité à gérer l'usure, l'échec et les environnements hostiles.</p>
+  
+  <div id="quiz-container" class="space-y-6">
+    <!-- Question 1 : Environnement hostile -->
+    <div class="question border-b pb-4">
+      <p class="font-bold mb-2">1. Face à un environnement d'apprentissage difficile (pression, solitude, hostilité) :</p>
+      <label class="flex items-center gap-2"><input type="radio" name="q1" value="A"> Je me désengage, je perds mes repères.</label>
+      <label class="flex items-center gap-2"><input type="radio" name="q1" value="B"> Je résiste, mais je m'épuise rapidement.</label>
+      <label class="flex items-center gap-2"><input type="radio" name="q1" value="C"> Je m'adapte, je trouve des ressources internes pour continuer.</label>
+    </div>
+
+    <!-- Question 2 : Gestion de la perte / échec -->
+    <div class="question border-b pb-4">
+      <p class="font-bold mb-2">2. Après un échec important ou une perte (oubli, rejet, erreur) :</p>
+      <label class="flex items-center gap-2"><input type="radio" name="q2" value="A"> Je doute de moi, j'abandonne souvent.</label>
+      <label class="flex items-center gap-2"><input type="radio" name="q2" value="B"> Je me relève, mais j'ai besoin d'aide extérieure.</label>
+      <label class="flex items-center gap-2"><input type="radio" name="q2" value="C"> Je transforme l'échec en leçon, je rebondis seul.</label>
+    </div>
+
+    <!-- Question 3 : Auto-régulation / conscience des signaux -->
+    <div class="question border-b pb-4">
+      <p class="font-bold mb-2">3. Face aux premiers signes de fatigue ou de saturation cognitive :</p>
+      <label class="flex items-center gap-2"><input type="radio" name="q3" value="A"> Je ne les vois pas, je m'effondre sans prévenir.</label>
+      <label class="flex items-center gap-2"><input type="radio" name="q3" value="B"> Je les perçois, mais je ne sais pas toujours comment réagir.</label>
+      <label class="flex items-center gap-2"><input type="radio" name="q3" value="C"> Je les détecte et j'ajuste mon rythme en conséquence.</label>
+    </div>
+
+    <!-- Question 4 : Anticipation des obstacles -->
+    <div class="question border-b pb-4">
+      <p class="font-bold mb-2">4. Avant une tâche complexe, j'anticipe les difficultés :</p>
+      <label class="flex items-center gap-2"><input type="radio" name="q4" value="A"> Rarement, je subis les événements.</label>
+      <label class="flex items-center gap-2"><input type="radio" name="q4" value="B"> Parfois, mais je manque de stratégies systématiques.</label>
+      <label class="flex items-center gap-2"><input type="radio" name="q4" value="C"> Toujours, j'ai une "boussole mentale" qui me guide.</label>
+    </div>
+
+    <!-- Question 5 : Récupération après effort -->
+    <div class="question">
+      <p class="font-bold mb-2">5. Après une période d'effort intense :</p>
+      <label class="flex items-center gap-2"><input type="radio" name="q5" value="A"> Je suis anéanti, j'ai besoin de très longtemps pour récupérer.</label>
+      <label class="flex items-center gap-2"><input type="radio" name="q5" value="B"> Je récupère, mais avec des stratégies extérieures (aide, repos forcé).</label>
+      <label class="flex items-center gap-2"><input type="radio" name="q5" value="C"> J'ai mes propres rituels de récupération (pause, respiration, changement d'activité).</label>
+    </div>
+
+    <button id="submit-quiz" class="mt-6 bg-slate-900 text-white px-6 py-3 font-bold uppercase hover:bg-green-700 transition-colors">
+      Calculer mon indice de résilience
+    </button>
+  </div>
+
+  <div id="result" class="hidden mt-8 p-6 border-t-4 border-slate-900 bg-white">
+    <p id="result-text" class="font-black text-2xl italic text-green-700"></p>
+    <p id="advice" class="text-lg mt-4 text-slate-700"></p>
+    <p id="usure-details" class="text-md mt-2 text-slate-500 italic"></p>
+    
+    <div id="fiches" class="mt-6 grid md:grid-cols-3 gap-4">
+      <!-- Les liens de fiches apparaîtront ici -->
+    </div>
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById('submit-quiz');
+  btn.addEventListener('click', () => {
+    const q1 = document.querySelector('input[name="q1"]:checked')?.value;
+    const q2 = document.querySelector('input[name="q2"]:checked')?.value;
+    const q3 = document.querySelector('input[name="q3"]:checked')?.value;
+    const q4 = document.querySelector('input[name="q4"]:checked')?.value;
+    const q5 = document.querySelector('input[name="q5"]:checked')?.value;
+
+    if (!q1 || !q2 || !q3 || !q4 || !q5) return alert("Complétez les 5 questions pour connaître votre résilience !");
+
+    // Calcul du score (A=0, B=1, C=2)
+    const valeurs = { 'A': 0, 'B': 1, 'C': 2 };
+    const score = valeurs[q1] + valeurs[q2] + valeurs[q3] + valeurs[q4] + valeurs[q5];
+    
+    const resultDiv = document.getElementById('result');
+    const resultText = document.getElementById('result-text');
+    const advice = document.getElementById('advice');
+    const usureDetails = document.getElementById('usure-details');
+    const fichesDiv = document.getElementById('fiches');
+
+    resultDiv.classList.remove('hidden');
+    
+    // Profil selon score (max 10)
+    if (score >= 8) {
+      resultText.innerText = "🏔️ PROFIL : BARGE ROUSSE ENDURCIE – Résilience maximale";
+      advice.innerText = "Vous traversez les tempêtes sans vous briser. Vous transformez l'adversité en force. Votre mission : accompagner ceux qui débutent.";
+      usureDetails.innerText = "Usure maîtrisée | Récupération rapide | Anticipation naturelle";
+      fichesDiv.innerHTML = `<a href="/docs/maintenance-barge-avance.pdf" class="bg-green-700 text-white p-4 text-center font-bold hover:bg-green-800 transition-colors">📂 Guide BARGE – La transmission</a>`;
+    } 
+    else if (score >= 5) {
+      resultText.innerText = "⛰️ PROFIL : GOÉLAND RÉSILIENT – En transition vers l'autonomie";
+      advice.innerText = "Vous tenez le choc, mais certaines tempêtes vous épuisent. Travaillez vos stratégies de récupération et d'anticipation.";
+      usureDetails.innerText = "Usure modérée | Récupération assistée | Anticipation en construction";
+      fichesDiv.innerHTML = `<a href="/docs/maintenance-goeland.pdf" class="bg-green-100 border-2 border-slate-900 p-4 text-center font-bold hover:bg-green-200 transition-colors">📂 Guide GOÉLAND – Renforcer sa résilience</a>`;
+    } 
+    else {
+      resultText.innerText = "🏝️ PROFIL : POUSSIN FRAGILE – Résilience à développer";
+      advice.innerText = "L'hostilité du flux vous fragilise. Il est temps de construire vos réserves internes et vos protections face à l'usure.";
+      usureDetails.innerText = "Usure rapide | Récupération longue | Anticipation absente";
+      fichesDiv.innerHTML = `<a href="/docs/maintenance-poussin.pdf" class="bg-orange-100 border-2 border-slate-900 p-4 text-center font-bold hover:bg-orange-200 transition-colors">📂 Guide POUSSIN – Les fondations de la résilience</a>`;
+    }
+  });
+</script>
