@@ -1,0 +1,80 @@
+<div class="border-4 border-slate-900 p-8 bg-sky-50 shadow-[8px_8px_0px_0px_rgba(14,165,233,1)] my-12">
+  <h3 class="text-2xl font-black mb-6 uppercase italic">Test de Navigation : Quel est votre GPS Interne ?</h3>
+  
+  <div id="quiz-container" class="space-y-6">
+    <!-- Question 1 -->
+    <div class="question border-b pb-4">
+      <p class="font-bold mb-2">1. Face à un flux d'information inconnu, je :</p>
+      <label class="flex items-center gap-2"><input type="radio" name="q1" value="A"> Cherche immédiatement de l'aide extérieure.</label>
+      <label class="flex items-center gap-2"><input type="radio" name="q1" value="B"> Utilise mes propres "balises" de connaissances pour avancer.</label>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question border-b pb-4">
+      <p class="font-bold mb-2">2. Quand je sens une surcharge cognitive (manque d'oxygène mental) :</p>
+      <label class="flex items-center gap-2"><input type="radio" name="q2" value="A"> Je panique et j'arrête tout.</label>
+      <label class="flex items-center gap-2"><input type="radio" name="q2" value="B"> Je ralentis et je segmente la tâche par paliers.</label>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question border-b pb-4">
+      <p class="font-bold mb-2">3. En cas d'erreur de trajectoire (échec) :</p>
+      <label class="flex items-center gap-2"><input type="radio" name="q3" value="A"> Je perds le sens du projet.</label>
+      <label class="flex items-center gap-2"><input type="radio" name="q3" value="B"> Mes "cristaux internes" détectent l'écart et je rectifie seul.</label>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question">
+      <p class="font-bold mb-2">4. Après un effort intellectuel intense :</p>
+      <label class="flex items-center gap-2"><input type="radio" name="q4" value="A"> Je suis épuisé, je dois tout arrêter.</label>
+      <label class="flex items-center gap-2"><input type="radio" name="q4" value="B"> Je régule mon rythme, je dors par cycles, je repars.</label>
+    </div>
+
+    <button id="submit-quiz" class="mt-6 bg-slate-900 text-white px-6 py-3 font-bold uppercase hover:bg-sky-600 transition-colors">
+      Calculer mon Magnétisme
+    </button>
+  </div>
+
+  <div id="result" class="hidden mt-8 p-6 border-t-4 border-slate-900 bg-white">
+    <p id="result-text" class="font-black text-2xl italic text-sky-600"></p>
+    <p id="advice" class="text-lg mt-4 text-slate-700"></p>
+    
+    <div id="fiches" class="mt-6 grid md:grid-cols-3 gap-4">
+      <!-- Les liens de fiches apparaîtront ici dynamiquement -->
+    </div>
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById('submit-quiz');
+  btn.addEventListener('click', () => {
+    const q1 = document.querySelector('input[name="q1"]:checked')?.value;
+    const q2 = document.querySelector('input[name="q2"]:checked')?.value;
+    const q3 = document.querySelector('input[name="q3"]:checked')?.value;
+    const q4 = document.querySelector('input[name="q4"]:checked')?.value;
+
+    if (!q1 || !q2 || !q3 || !q4) return alert("Complétez votre traversée !");
+
+    const scoreB = [q1, q2, q3, q4].filter(v => v === 'B').length;
+    const resultDiv = document.getElementById('result');
+    const resultText = document.getElementById('result-text');
+    const advice = document.getElementById('advice');
+    const fichesDiv = document.getElementById('fiches');
+
+    resultDiv.classList.remove('hidden');
+    
+    if (scoreB >= 3) {
+      resultText.innerText = "🦅 PROFIL : BARGE ROUSSE – Navigateur Haute Performance";
+      advice.innerText = "Votre GPS interne est parfaitement calibré. Vous êtes prêt pour la traversée des systèmes complexes.";
+      fichesDiv.innerHTML = `<a href="/docs/barge-rousse-fiche.pdf" class="bg-sky-600 text-white p-4 text-center font-bold hover:bg-sky-700 transition-colors">📂 Fiche BARGE ROUSSE – La maîtrise</a>`;
+    } else if (scoreB >= 2) {
+      resultText.innerText = "🕊️ PROFIL : GOÉLAND – Navigateur en transition";
+      advice.innerText = "Vous avez des balises, mais vous dépendez encore du vent extérieur. Travaillez votre stockage interne.";
+      fichesDiv.innerHTML = `<a href="/docs/goeland-fiche.pdf" class="bg-blue-100 border-2 border-slate-900 p-4 text-center font-bold hover:bg-blue-200 transition-colors">📂 Fiche GOÉLAND – Le vol de transition</a>`;
+    } else {
+      resultText.innerText = "🐥 PROFIL : POUSSIN – Apprenant en éclosion";
+      advice.innerText = "La solitude du flux vous effraie. Le Bureau d'Immigration Kreco6 va vous aider à forger vos cristaux magnétiques.";
+      fichesDiv.innerHTML = `<a href="/docs/poussin-fiche.pdf" class="bg-orange-100 border-2 border-slate-900 p-4 text-center font-bold hover:bg-orange-200 transition-colors">📂 Fiche POUSSIN – L'éclosion des cristaux</a>`;
+    }
+  });
+</script>
