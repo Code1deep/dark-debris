@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BoussoleTest from '../components/BoussoleTest.astro';
+import RadarVol from '../components/RadarVol.astro';
+---
+
+<BaseLayout title="Outils de Pilotage" description="Diagnostiquez votre profil et pilotez votre charge cognitive">
+  <main class="max-w-5xl mx-auto py-12 px-6">
+    <header class="mb-12 border-l-8 border-slate-900 pl-6">
+      <h1 class="text-4xl font-black italic uppercase">Instruments de Navigation</h1>
+      <p class="text-lg font-bold text-slate-600 mt-2">Maîtrisez votre trajectoire dans l'Océan de la Complexité.</p>
+    </header>
+
+    <!-- ÉTAPE 1 : QUIZ -->
+    <section class="mb-16">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="bg-sky-600 text-white px-2 py-1 text-xs font-black">ÉTAPE 01</span>
+        <h2 class="text-2xl font-black italic uppercase">Le Diagnostic du Migrateur</h2>
+        <p class="text-sm text-slate-500 ml-2">Calibrez vos cristaux magnétiques</p>
+      </div>
+      <BoussoleTest />
+    </section>
+
+    <!-- ÉTAPE 2 : RADAR -->
+    <section class="mb-16">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="bg-purple-600 text-white px-2 py-1 text-xs font-black">ÉTAPE 02</span>
+        <h2 class="text-2xl font-black italic uppercase">Le Radar de Vol Bimodal</h2>
+        <p class="text-sm text-slate-500 ml-2">Gérez vos cycles de vigilance</p>
+      </div>
+      <RadarVol />
+    </section>
+
+    <!-- ÉTAPE 3 : ARCHIVES -->
+    <section>
+      <div class="flex items-center gap-2 mb-4">
+        <span class="bg-emerald-600 text-white px-2 py-1 text-xs font-black">ÉTAPE 03</span>
+        <h2 class="text-2xl font-black italic uppercase">Protocoles de Remédiation</h2>
+        <p class="text-sm text-slate-500 ml-2">Téléchargez vos fiches de résilience</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-4">
+        <a href="/docs/maintenance-poussin.pdf" class="border-2 border-slate-900 p-4 text-center font-bold hover:bg-orange-100 transition-colors bg-orange-50">
+          📂 Fiche Poussin – L'éclosion
+        </a>
+        <a href="/docs/maintenance-goeland.pdf" class="border-2 border-slate-900 p-4 text-center font-bold hover:bg-blue-100 transition-colors bg-blue-50">
+          📂 Fiche Goéland – La transition
+        </a>
+        <a href="/docs/maintenance-barge-avance.pdf" class="border-2 border-slate-900 p-4 text-center font-bold hover:bg-green-100 transition-colors bg-green-50">
+          📂 Fiche Barge – La maîtrise
+        </a>
+        <a href="/docs/fiche-martinet.pdf" class="border-2 border-slate-900 p-4 text-center font-bold hover:bg-purple-100 transition-colors bg-purple-50">
+          📂 Fiche Martinet – Résilience bimodale
+        </a>
+      </div>
+    </section>
+
+    <!-- Note épistémologique -->
+    <section class="mt-12 p-6 bg-slate-100 border-l-4 border-slate-900">
+      <p class="text-sm text-slate-700 italic">
+        ⚙️ <span class="font-bold">Lien avec l'écosystème KrecoSys :</span> 
+        Le <strong>Diagnostic du Migrateur</strong> est connecté au dépôt <code>obstacle-detection</code> (typologie des obstacles cognitifs). 
+        Le <strong>Radar de Vol Bimodal</strong> dialogue avec la <code>BDI-prototype</code> (gestion des flux temporels). 
+        Ces outils transforment le site en <strong>interface de régulation</strong> au service de l'apprenant.
+      </p>
+    </section>
+  </main>
+</BaseLayout>
