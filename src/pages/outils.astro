@@ -31,6 +31,83 @@ import RadarVol from '../components/RadarVol.astro';
       <RadarVol />
     </section>
 
+
+
+
+    <!-- SECTION KPI PROACTIF -->
+    <div class="border-4 border-slate-900 p-8 bg-white my-8">
+    <h3 class="text-2xl font-black mb-6 italic uppercase">📊 L'Indice d'Anticipation</h3>
+    <p class="mb-4 text-slate-700">Mesurez votre capacité à transformer un signal faible en action préventive.</p>
+  
+    <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-slate-100 p-4">
+        <p class="font-bold text-xs uppercase text-slate-500">Fenêtre de décision</p>
+        <p class="text-2xl font-black">60 min</p>
+        <p class="text-sm">Entre l'alerte (10:00) et le seuil critique (11:00)</p>
+        </div>
+        <div class="bg-slate-100 p-4">
+        <p class="font-bold text-xs uppercase text-slate-500">Votre action à</p>
+        <input type="range" min="0" max="60" value="15" id="action-time" class="w-full accent-purple-600">
+        <p id="action-value" class="text-2xl font-black">10:15</p>
+        </div>
+    </div>
+  
+    <div id="kpi-result" class="mt-6 p-4 text-center font-black text-xl">
+        Score : <span id="kpi-score" class="text-purple-600">75%</span> – Martinet en Vol
+    </div>
+    </div>
+
+    <script>
+    const actionSlider = document.getElementById('action-time');
+    const actionValue = document.getElementById('action-value');
+    const kpiScore = document.getElementById('kpi-score');
+  
+    function updateKPI() {
+        const t_action = parseInt(actionSlider.value);
+        const heures = Math.floor(t_action / 60) + 10;
+        const minutes = t_action % 60;
+        actionValue.innerText = `${heures}:${minutes.toString().padStart(2, '0')}`;
+    
+        // Calcul du KPI : (1 - (t_action / 60)) * 100
+        const score = Math.round((1 - (t_action / 60)) * 100);
+        kpiScore.innerText = `${score}%`;
+    
+        let niveau = "";
+        if (score >= 80) niveau = "🦅 Martinet Confirmé – Anticipation exceptionnelle";
+        else if (score >= 60) niveau = "🐦 Martinet en Vol – Anticipation satisfaisante";
+        else if (score >= 40) niveau = "🐥 Martinet Apprenti – Anticipation en construction";
+        else niveau = "🥚 Poussin – Réaction tardive";
+    
+        document.getElementById('kpi-result').innerHTML = `Score : <span class="text-purple-600 font-black">${score}%</span> – ${niveau}`;
+    }
+  
+    actionSlider.addEventListener('input', updateKPI);
+    updateKPI();
+    </script>
+
+    <!-- PANNEAU DE RESSOURCES MARTINET -->
+    <div class="border-4 border-slate-900 p-8 bg-white my-8">
+    <h3 class="text-2xl font-black mb-6 italic uppercase">📦 Kit de Déploiement : Protocole Martinet</h3>
+  
+    <div class="grid md:grid-cols-2 gap-8">
+        <div class="space-y-4">
+        <p class="font-bold text-slate-700">Pour l'Apprenant :</p>
+        <ul class="list-none space-y-2">
+            <li><a href="/docs/pedagogie/martinet-infographie.pdf" class="text-blue-600 underline hover:text-blue-800">📊 Infographie : Les 3 Leçons du Vol Continu</a></li>
+            <li><a href="/docs/pedagogie/martinet-activites.pdf" class="text-blue-600 underline hover:text-blue-800">✍️ Fiche d'Activités : Construire sa Résilience</a></li>
+        </ul>
+        </div>
+    
+        <div class="space-y-4">
+        <p class="font-bold text-slate-700">Pour le Formateur (Ingénieur-Pédagogue) :</p>
+        <ul class="list-none space-y-2">
+            <li><a href="/docs/pedagogie/martinet-guide-eval.pdf" class="text-purple-600 underline hover:text-purple-800">📋 Guide d'Évaluation & Critères (PDF)</a></li>
+            <li><a href="/docs/pedagogie/martinet-schema-bimodal.png" class="text-purple-600 underline hover:text-purple-800">🖼️ Schéma Haute Définition : Cerveau Bimodal</a></li>
+        </ul>
+        </div>
+    </div>
+    </div>
+
     <!-- ÉTAPE 3 : ARCHIVES -->
     <section>
     <div class="flex items-center gap-2 mb-4">
