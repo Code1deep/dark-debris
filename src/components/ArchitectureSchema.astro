@@ -1,0 +1,63 @@
+<section class="max-w-4xl mx-auto my-12 p-8 border-4 border-slate-900 bg-slate-50 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] font-mono text-xs md:text-sm">
+  <div class="bg-slate-900 text-white p-2 mb-6 text-center font-black tracking-widest uppercase">
+    Architecture BDI v2.0 - Flux de Données & Instrumentation
+  </div>
+
+  <div class="flex flex-col items-center space-y-4 text-center">
+    <!-- NIVEAU 1 : ACQUISITION -->
+    <div class="flex flex-wrap justify-center gap-4">
+      <div class="p-3 border-2 border-slate-900 bg-white font-bold">[Capteurs IoT]</div>
+      <div class="py-3">→</div>
+      <div class="p-3 border-2 border-slate-900 bg-blue-100 font-bold tracking-tighter">[MQTT Broker]</div>
+      <div class="py-3">→</div>
+      <div class="p-3 border-2 border-slate-900 bg-blue-600 text-white font-black">[BDI-prototype]</div>
+    </div>
+
+    <div class="text-xl">↓</div>
+
+    <!-- NIVEAU 2 : STOCKAGE -->
+    <div class="p-3 border-2 border-slate-900 bg-slate-200 font-bold italic">[InfluxDB / Stockage]</div>
+
+    <div class="text-xl">↓</div>
+
+    <!-- NIVEAU 3 : DUALITÉ -->
+    <div class="grid grid-cols-2 gap-12 w-full max-w-lg">
+      <div class="flex flex-col items-center">
+        <div class="p-3 border-2 border-slate-900 bg-yellow-200 w-full font-bold">[Grafana]</div>
+        <div class="py-1">↓</div>
+        <div class="text-[10px] uppercase text-slate-500">Visualisation</div>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="p-3 border-2 border-slate-900 bg-emerald-200 w-full font-bold">[Digital Twin]</div>
+        <div class="py-1">↓</div>
+        <div class="text-[10px] uppercase text-slate-500">Simulation</div>
+      </div>
+    </div>
+
+    <div class="text-xl">↓</div>
+
+    <!-- NIVEAU 4 : KPI PROACTIF (L'INNOVATION) -->
+    <div class="w-full max-w-md p-4 border-4 border-double border-red-600 bg-white shadow-md">
+      <div class="font-black text-red-600 mb-1">NOUVEAU : KPI PROACTIF</div>
+      <div class="text-[10px] leading-tight">Écart temporel entre signal faible et action corrective<br/><strong>Score d'anticipation du Martinet</strong></div>
+    </div>
+
+    <div class="text-xl">↓</div>
+
+    <!-- NIVEAU 5 : DIDACTIQUE -->
+    <div class="p-3 border-2 border-slate-900 bg-slate-900 text-white w-full max-w-sm">
+      [Obstacle-detection / Algorithmes]
+    </div>
+
+    <div class="text-xl">↓</div>
+
+    <!-- NIVEAU 6 : LONGITUDINAL -->
+    <div class="p-3 border-2 border-dashed border-slate-400 text-slate-500 italic">
+      [Spider Chart longitudinal / Trajectoire 5-10 ans]
+    </div>
+  </div>
+
+  <div class="mt-8 pt-4 border-t border-slate-200 text-[10px] text-slate-400 text-right uppercase tracking-widest">
+    Propriété intellectuelle : Krecosys.6 - Licence CC BY-SA 4.0
+  </div>
+</section>
