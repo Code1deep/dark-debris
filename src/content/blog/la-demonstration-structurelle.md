@@ -47,9 +47,10 @@ puis en un objet d'analyse.
 
 ## La série temporelle comme dénominateur commun
 
-Ce que ces domaines partagent, c'est une structure de données identique :
+Ce que ces domaines partagent, c’est une structure de données identique :
 
 (timestamp, variable, valeur, unité)
+
 timestamp : le moment précis de la mesure (date et heure)
 variable : la grandeur physique ou la donnée (par exemple : température, pH, vitesse)
 valeur : la valeur numérique mesurée à ce moment-là
