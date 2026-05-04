@@ -51,11 +51,6 @@ Ce que ces domaines partagent, c’est une structure de données identique :
 
 (timestamp, variable, valeur, unité)
 
-timestamp : le moment précis de la mesure (date et heure)
-variable : la grandeur physique ou la donnée (par exemple : température, pH, vitesse)
-valeur : la valeur numérique mesurée à ce moment-là
-unité : l’unité utilisée pour exprimer cette valeur (°C, pH, km/h, etc.)
-
 Que l'on mesure le pH d'un bassin aquaponique toutes les 30 secondes, la 
 température d'un moteur toutes les minutes, ou le temps de passage à un 
 carrefour toutes les 5 secondes, la donnée produite a la même forme. 
