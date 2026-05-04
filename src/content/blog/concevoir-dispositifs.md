@@ -1,100 +1,156 @@
 ---
-title: "Concevoir des dispositifs qui n’automatisent pas"
-description: "La Base de Données Intelligente n'est pas un outil de productivité. C'est un instrument d'investigation didactique."
-pubDate: 2026-04-27
+title: "Concevoir des dispositifs qui n'automatisent pas"
+description: "La BDI ne remplace ni l'enseignant ni la réflexion de l'apprenant. Elle crée les conditions pour que l'erreur devienne un objet d'investigation, pas une faute à corriger."
+pubDate: 2026-05-03
 author: "A. Elbah"
-keywords: "instrument didactique, investigation, DBR, médiation, étayage, BDI, Rabardel"
-niveau: "intermediaire"
+keywords: "BDI, artefact, instrument, Rabardel, genèse instrumentale, DBR, étayage, obstacles cognitifs, didactique, technologie éducative"
+niveau: "expert"
 ---
 
-# Concevoir des dispositifs qui n’automatisent pas
+# Concevoir des dispositifs qui n'automatisent pas
 
 ## Le piège de l'automatisation
 
-Lorsqu’un ingénieur conçoit un outil technique, son premier réflexe est souvent de chercher à **automatiser**. Remplacer une tâche pénible, fiabiliser un processus, gagner en efficacité.
+Lorsqu'un ingénieur conçoit un outil technique, son premier réflexe est 
+souvent de chercher à **automatiser** : remplacer une tâche pénible, 
+fiabiliser un processus, gagner en efficacité. Cette logique est légitime 
+en contexte industriel.
 
-C’est légitime. C’est utile. Mais ce n’est pas mon métier.
+Mais elle ne s'applique pas à la recherche en éducation.
 
-Je ne conçois pas des dispositifs pour automatiser des tâches. Je conçois des dispositifs pour **comprendre comment les humains apprennent**.
+Mon objectif n'est pas de concevoir des dispositifs qui automatisent des 
+tâches. C'est de concevoir des dispositifs qui permettent de **comprendre 
+comment les apprenants apprennent**. Cette différence de finalité distingue 
+deux postures : celle de l'ingénieur-concepteur, qui optimise un produit, 
+et celle du chercheur en technologie éducative, qui instrumente une 
+investigation sur les processus d'apprentissage.
 
-Cette différence est fondamentale. Elle sépare l’ingénieur classique du **chercheur en technologie éducative**.
+## L'artefact n'est pas l'instrument
 
-## L’artefact n’est pas l’instrument
+Le psychologue et ergonome Pierre Rabardel (1995) a posé une distinction 
+qui éclaire cette différence :
 
-Le psychologue et ergonome Pierre Rabardel (1995) a posé une distinction qui éclaire tout mon travail :
+- **L'artefact** : l'objet technique brut, tel qu'il est livré par le 
+  fabricant. Il n'a pas de signification pédagogique intrinsèque.
+- **L'instrument** : l'artefact **transformé par l'usage** que l'apprenant 
+  en fait. C'est l'artefact augmenté des schèmes d'utilisation que 
+  l'apprenant développe à son contact.
 
-- **L’artefact** : l’objet technique brut, livré par le fabricant. Il n’a pas de signification pédagogique intrinsèque.
-- **L’instrument** : l’artefact **transformé par l’usage** que l’apprenant en fait. C’est l’artefact plus les schèmes d’utilisation que l’apprenant développe.
+Un capteur IoT, une interface graphique, un tableau de bord — ce ne sont 
+que des artefacts. C'est **l'appropriation par l'apprenant** qui en fait 
+des instruments d'apprentissage.
 
-Un capteur IoT, une interface graphique, un tableau de bord – ce ne sont que des artefacts. C’est **l’appropriation par l’apprenant** qui en fait des instruments d’apprentissage.
-
-**Mon travail de concepteur ne s’arrête pas à l’artefact. Il commence là où l’apprenant s’en saisit.**
+Le travail de conception ne s'arrête donc pas à la livraison de l'artefact. 
+Il commence là où l'apprenant s'en saisit.
 
 ## La Base de Données Intelligente (BDI) : un instrument, pas un automate
 
-La BDI que j’ai développée ne remplace ni l’enseignant ni la réflexion de l’apprenant. Elle joue un autre rôle.
+La BDI que je développe dans le cadre de cette recherche ne remplace ni 
+l'enseignant ni la réflexion de l'apprenant. Elle joue un rôle 
+fondamentalement différent d'un système automatisé.
 
-Elle collecte des traces. Elle analyse des erreurs. Elle propose des alertes. Mais elle ne corrige jamais à la place de l’apprenant.
+Elle collecte des traces. Elle analyse des erreurs. Elle propose des 
+alertes. Mais elle **ne corrige jamais à la place de l'apprenant**.
 
-Pourquoi ? Parce que **l’erreur est une opportunité d’apprentissage**.
+Pourquoi ? Parce que l'erreur est une opportunité d'apprentissage, pas 
+une faute à éliminer.
 
-- Si la BDI corrige automatiquement, l’apprenant ne comprend pas son erreur.
-- Si la BDI signale une anomalie sans en donner la solution, l’apprenant est obligé de **formuler une hypothèse, de la tester, de l’ajuster**.
+- Si la BDI corrige automatiquement une dérive de pH, l'apprenant ne 
+  comprend pas ce qui s'est passé dans le système.
+- Si la BDI **signale l'anomalie sans en donner la solution**, l'apprenant 
+  est contraint de formuler une hypothèse, de la tester, de l'ajuster.
 
-C’est ce que la didactique des sciences appelle une **situation-problème**. Le dispositif ne livre pas la réponse. Il crée les conditions pour que l’apprenant **se mette en recherche**.
+C'est ce que Brousseau (1998) appelle une **situation de validation** : le 
+dispositif ne livre pas la réponse. Il crée les conditions pour que 
+l'apprenant **se mette en recherche**.
 
-## Trois niveaux d’étayage, trois postures de médiation
+## Trois niveaux d'étayage, trois postures cognitives
 
-Dans mon dispositif, j’ai distingué trois niveaux d’étayage, qui correspondent à la progression de l’apprenant dans le raisonnement systémique.
+Le dispositif intègre trois niveaux d'étayage, correspondant à la 
+progression de l'apprenant dans le raisonnement systémique :
 
-| Niveau | Rôle du dispositif | Posture de l’apprenant |
+| Niveau | Rôle du dispositif | Posture de l'apprenant |
 |--------|--------------------|------------------------|
-| **Débutant** | Guidage fort – le dispositif signale l’anomalie et indique quoi observer | Il suit, il exécute |
-| **Intermédiaire** | Guidage progressif – le dispositif montre les liens, l’apprenant interprète | Il commence à questionner |
-| **Avancé** | Guidage faible – l’apprenant formule des hypothèses et les confronte aux données | Il raisonne, il anticipe |
+| **Débutant** | Guidage fort — le dispositif signale l'anomalie et indique quoi observer | L'apprenant suit les indications et observe |
+| **Intermédiaire** | Guidage progressif — le dispositif montre les corrélations entre paramètres | L'apprenant interprète les liens et formule des questions |
+| **Avancé** | Guidage faible — l'apprenant formule des hypothèses prédictives et les confronte aux données | L'apprenant raisonne, anticipe, valide ou invalide ses modèles |
 
-Le dispositif ne se contente pas de « s’adapter ». Il **accompagne une transformation cognitive**. C’est ce que Rabardel appelle la **genèse instrumentale** : l’apprenant passe progressivement de l’usage subi à l’usage maîtrisé, puis à l’usage détourné (créatif).
+Le dispositif ne se contente pas de « s'adapter » au niveau de 
+l'apprenant. Il **accompagne une transformation cognitive**. C'est ce que 
+Rabardel (1995) appelle la **genèse instrumentale** : l'apprenant passe 
+progressivement de l'usage guidé à l'usage autonome, puis à l'usage 
+créatif — détournant l'artefact pour poser ses propres questions.
 
 ## Pourquoi la DBR est indispensable
 
-Une telle conception ne peut pas sortir d’un bureau d’études, en une seule version figée. Elle repose sur une méthodologie spécifique : la **Design-Based Research (DBR)**.
+Un tel dispositif ne peut pas être conçu en une seule version figée, 
+dans un bureau d'études. Il repose sur une méthodologie itérative 
+spécifique : la **Design-Based Research** (DBR).
 
-La DBR, formalisée par Brown (1992), Collins (1999) et le Design-Based Research Collective (2003), articule :
+La DBR, formalisée par Brown (1992), Collins (1999) et le Design-Based 
+Research Collective (2003), articule cinq étapes :
 
-1. **Conception** – je construis une première version du dispositif
-2. **Implémentation** – je le teste sur le terrain avec des apprenants réels
-3. **Analyse** – j’observe ce qui fonctionne, ce qui bloque, ce qui surprend
-4. **Itération** – je modifie le dispositif en fonction des observations
-5. **Théorisation** – je généralise ce que j’ai appris sur l’apprentissage
+1. **Conception** — construire une première version du dispositif
+2. **Implémentation** — la tester sur le terrain avec des apprenants réels
+3. **Analyse** — observer ce qui fonctionne, ce qui bloque, ce qui 
+   surprend
+4. **Itération** — modifier le dispositif en fonction des observations
+5. **Théorisation** — formaliser ce que l'on a appris sur les processus 
+   d'apprentissage
 
-**La DBR n’est pas une méthode de conception produit. C’est une méthodologie de production de connaissances sur la façon dont les humains apprennent.**
+La DBR n'est pas une méthode de conception produit. C'est une 
+**méthodologie de production de connaissances** sur la façon dont les 
+apprenants apprennent lorsqu'ils sont confrontés à des systèmes complexes 
+instrumentés.
 
-## L’ingénieur-pédagogue : un médiateur qui instrumente sa propre recherche
+## La posture de l'ingénieur-pédagogue-chercheur
 
-Je ne me définis pas comme un ingénieur qui enseigne. Je me définis comme un **chercheur en éducation qui utilise l’ingénierie comme instrument d’investigation**.
+Cette démarche dessine une posture professionnelle spécifique. Je ne me 
+définis pas comme un ingénieur qui enseigne. Je me définis comme un 
+**chercheur en éducation qui utilise l'ingénierie comme instrument 
+d'investigation**.
 
-- La technique (capteurs, code, bases de données) est mon **microscope**.
-- Le Living Lab est mon **terrain d’observation**.
-- La DBR est ma **méthode**.
-- Les obstacles cognitifs (linéarité, temporalité, proportionnalité) sont mes **objets d’étude**.
-
-**Concevoir des dispositifs qui n’automatisent pas, c’est faire le pari que l’intelligence humaine mérite mieux qu’une réponse préprogrammée. C’est lui offrir les moyens de se confronter à la complexité, de s’y perdre un peu, et d’en sortir grandi.**
+- La technique (capteurs, code, bases de données) est le **microscope** 
+  qui rend observable ce qui ne l'est pas à l'œil nu : les stratégies de 
+  raisonnement, les hésitations, les bifurcations cognitives.
+- Le Living Lab est le **terrain d'observation** — un environnement 
+  complexe et authentique, pas un laboratoire aseptisé.
+- La DBR est la **méthode** — itérative, ancrée dans le terrain, 
+  productrice de théorie.
+- Les obstacles cognitifs (linéarité, temporalité, proportionnalité) sont 
+  les **objets d'étude** — les formes de raisonnement que la thèse 
+  cherche à comprendre et à modéliser.
 
 ## En résumé
 
-| Approche classique (automatisation) | Approche Krecosys (investigation didactique) |
-|-------------------------------------|-----------------------------------------------|
-| Remplacer l’humain | Augmenter l’humain |
-| Corriger l’erreur | Révéler l’obstacle |
-| Donner la réponse | Provoquer la recherche |
-| Une solution figée | Une itération continue (DBR) |
-| L’artefact au centre | L’instrument et l’apprenant au centre |
+| Approche par automatisation | Approche par investigation instrumentée |
+|-----------------------------|-----------------------------------------|
+| Remplacer la tâche humaine | Rendre le raisonnement humain observable |
+| Corriger l'erreur automatiquement | Révéler l'obstacle cognitif sous-jacent |
+| Donner la réponse | Créer une situation de recherche |
+| Concevoir une solution figée | Itérer via la DBR |
+| L'artefact technique au centre | L'instrument et l'apprenant au centre |
 
-**Mon dispositif n’est pas une machine à répondre. C’est une machine à questionner, à surprendre, à faire grandir.**
+Concevoir des dispositifs qui n'automatisent pas, c'est reconnaître que 
+l'objectif n'est pas l'efficacité technique, mais la compréhension des 
+processus par lesquels les apprenants apprennent à penser en systèmes.
 
 ---
 
-📚 *Article précédent (Phase 1) : « De l’établi à l’écran : ce qui change quand on devient formateur »*  
-📚 *Article suivant : « L’intervalle de tolérance : de la machine à l’apprenant » – à venir.*
+*Cet article s'inscrit dans une réflexion sur la méthodologie de 
+conception des dispositifs éducatifs instrumentés. Pour le cadre 
+épistémologique qui le sous-tend, voir la série « De la productique à la 
+didactique ».*
 
-*Cette série (Phase 2) approfondit ma méthodologie de conception et la théorie sous-jacente de mon dispositif.*
+*Références :*
+- *Brousseau, G. (1998). Théorie des situations didactiques. La Pensée 
+  Sauvage.*
+- *Brown, A. L. (1992). Design experiments. Journal of the Learning 
+  Sciences, 2(2), 141–178.*
+- *Collins, A. (1999). The changing infrastructure of education research. 
+  In E. C. Lagemann et L. S. Shulman (Eds.), Issues in education 
+  research. Jossey-Bass.*
+- *Design-Based Research Collective. (2003). Design-based research: An 
+  emerging paradigm. Educational Researcher, 32(1), 5–8.*
+- *Rabardel, P. (1995). Les hommes et les technologies : approche 
+  cognitive des instruments contemporains. Armand Colin.*
