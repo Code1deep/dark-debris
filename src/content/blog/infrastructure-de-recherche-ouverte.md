@@ -1,23 +1,8 @@
 ---
-title: "Une infrastructure de recherche ouverte : architecture et principes"
-description: "Le dispositif de recherche repose sur six « La science ne se construit pas dans la forteresse. Elle se construit dans l'écosystème. » | → Supprimé |
-
----
-
-## Article reformulé
-
-```markdown
----
 title: "Une infrastructure de recherche ouverte : dépôts publics modulaires, conçus pour permettre l'itération DBR, la reproductibilité et la science ouverte. architecture et principes"
 description: "Le dispositif de recherche repose sur six dépôts publics modulaires, conçus pour permettre l'itération DBR, la reproductibilité et la science ouverte. Cet article en décrit l'architecture et les principes."
 pubDate: 2026-05-04 Cet article en décrit l'architecture et les principes."
 pubDate: 2026-05-04
-author: "A. Elbah"
-keywords: "infrastructure de recherche, science ouverte, GitHub, Zenodo, DOI, reproductibilité, modularité, DBR, BDI, Living Lab"
-niveau: "expert"
----
-
-# Une infrastructure de recherche ouverte : architecture et principes
 author: "A. Elbah"
 keywords: "infrastructure de recherche, science ouverte, GitHub, Zenodo, DOI, reproductibilité, modularité, DBR, BDI, Living Lab"
 niveau: "expert"
@@ -301,4 +286,12 @@ analyses reproductibles et les résultats transférables.
 ---
 
 *Cet article décrit l'architecture technique du dispositif de recherche. 
-Pour le cadre méthodologique, voir «
+Pour le cadre méthodologique, voir « La Design-Based Research comme 
+méthodologie de production de connaissances ». Pour le cadre 
+épistémologique, voir la série « De la productique à la didactique ».*
+
+*Références La Design-Based Research comme :*
+- *Barab, S. et Squire, K. (2004). Design-Based Research: Putting a 
+  stake in the ground. Journal of the Learning Sciences, 13(1), 1–14.*
+- *Brown, A. L. (1992). Design experiments. Journal of the Learning 
+  Sciences, 2(2), 141–178.*
