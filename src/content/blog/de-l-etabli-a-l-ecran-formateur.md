@@ -1,9 +1,9 @@
 ---
 title: "De l'établi à l'écran : ce qui change quand on devient formateur"
-description: "Maîtriser la technique ne suffit pas pour l'enseigner. Le formateur apprend à voir l'invisible : les obstacles cognitifs."
-pubDate: 2026-04-26
+description: "Maîtriser un métier technique ne suffit pas pour l'enseigner. Ce récit retrace la transition du technicien au formateur, et la découverte des obstacles cognitifs comme objets d'étude."
+pubDate: 2026-05-04
 author: "A. Elbah"
-keywords: "formateur, pédagogie, transfert de compétences, obstacles cognitifs, médiation, étayage"
+keywords: "formateur, technicien, transition, obstacles cognitifs, posture réflexive, Schön, médiation, BDI, accompagnement, productique"
 niveau: "initiation"
 ---
 
@@ -11,88 +11,145 @@ niveau: "initiation"
 
 ## Le choc du transfert
 
-On croit souvent qu'il suffit de maîtriser un métier pour pouvoir l'enseigner. C'est un malentendu, et je l'ai vécu personnellement.
+On croit souvent qu'il suffit de maîtriser un métier pour pouvoir 
+l'enseigner. J'ai longtemps partagé cette conviction — et c'est 
+l'expérience qui m'a appris qu'elle était incomplète.
 
-Pendant des années, j'ai programmé des machines, calibré des capteurs, optimisé des lignes de production. J'étais technicien, puis technologue. **Je savais faire.**
+Pendant des années, j'ai programmé des machines, calibré des capteurs, 
+optimisé des lignes de production. J'étais technicien, puis technologue. 
+Je savais faire.
 
-Quand j'ai commencé à former des opérateurs, j'ai cru que ce serait simple : je vais leur montrer ce que je fais, ils vont reproduire, et tout ira bien.
+Quand j'ai commencé à former des opérateurs, j'ai pensé que la 
+transmission serait directe : montrer ce que je fais, attendre la 
+reproduction, ajuster si nécessaire.
 
-**Je n'avais pas prévu l'obstacle.**
+Ce qui m'attendait était tout autre.
 
 ## L'illusion de la transparence
 
-En psychologie cognitive, on appelle cela **l'illusion de la transparence** : celui qui sait a du mal à imaginer ce que celui qui ne sait pas ne comprend pas.
+En psychologie cognitive, ce phénomène est documenté sous le nom 
+d'**illusion de transparence** : l'expert a du mal à se représenter ce 
+que le novice ne comprend pas, parce que sa propre expertise a rendu 
+invisibles les étapes intermédiaires du raisonnement.
 
-L'expert voit une évidence. Le débutant voit un mur.
+Concrètement, la même situation était lue très différemment :
 
-- Moi, je voyais une consigne CNC évidente.
-- L'apprenant, lui, voyait une suite de lettres et de chiffres sans signification.
-- Moi, je sentais le moment où la machine allait dévier.
-- L'apprenant, lui, attendait que la panne arrive sans rien comprendre.
+- Là où je voyais une consigne de commande numérique (CNC) évidente, 
+  l'apprenant voyait une suite de lettres et de chiffres sans 
+  signification.
+- Là où je percevais les signes avant-coureurs d'une dérive machine, 
+  l'apprenant attendait la panne sans en déceler les prémices.
 
-J'ai réalisé une chose fondamentale : **maîtriser la technique ne suffit pas pour l'enseigner.**
+Cette asymétrie m'a conduit à une prise de conscience fondamentale : 
+**la maîtrise technique ne garantit pas la capacité à enseigner**. Il 
+manquait un savoir d'une autre nature — un savoir sur l'apprenant, pas 
+sur la machine.
 
-## Apprendre à voir l'invisible
+## Apprendre à observer l'apprenant
 
-Pour devenir formateur, j'ai dû développer un nouveau regard. Un regard non plus sur la machine, mais sur **celui qui apprend**.
+Pour devenir formateur, j'ai dû développer un nouveau type 
+d'observation. Non plus l'observation de la machine (ses paramètres, ses 
+signaux, ses dérives), mais l'observation de **celui qui apprend** : ses 
+hésitations face à une interface, ses stratégies face à une panne, ses 
+modèles explicatifs face à un résultat inattendu.
 
-Je ne regarde plus les capteurs. Je regarde **le doute dans ses yeux**.
+Donald Schön (1983) appelle cette compétence la **posture réflexive** : 
+la capacité du praticien à observer non seulement l'objet de son travail, 
+mais aussi sa propre pratique et l'effet qu'elle produit sur autrui. 
+L'enseignant réflexif observe simultanément le contenu enseigné et le 
+sujet qui apprend.
 
-Je n'écoute plus les bruits de la machine. J'écoute **ses silences, ses hésitations, ses fausses pistes**.
+Cette double observation est devenue le fondement de ma pratique de 
+formateur — et, plus tard, de mon questionnement de recherche.
 
-**C'est ce que les sciences de l'éducation appellent la posture réflexive.** L'enseignant observe non seulement l'objet enseigné, mais aussi le sujet qui apprend.
+## Les obstacles cognitifs : des récurrences révélatrices
 
-## Les obstacles cognitifs : ce qui bloque vraiment
+Au fil des années d'accompagnement, j'ai identifié des récurrences. Les 
+mêmes blocages revenaient, d'un apprenant à l'autre, indépendamment de 
+leur niveau ou de leur motivation :
 
-Très vite, j'ai identifié des récurrences. Les mêmes blocages revenaient, d'un apprenant à l'autre.
+- Certains ne comprenaient pas pourquoi un léger retard de réponse 
+  pouvait avoir des conséquences importantes sur la production. 
+  **(Obstacle de temporalité)**
+- D'autres pensaient que doubler un paramètre allait doubler le résultat, 
+  sans percevoir les interactions non linéaires entre variables. 
+  **(Obstacle de proportionnalité)**
+- Beaucoup cherchaient une cause unique à une panne, alors que celle-ci 
+  résultait de l'enchaînement de plusieurs facteurs. 
+  **(Obstacle de linéarité)**
 
-- Certains ne comprenaient pas pourquoi un petit retard de réponse pouvait avoir des conséquences dramatiques sur la production. **(Obstacle de temporalité)**
-- D'autres pensaient que doubler un paramètre allait doubler le résultat, sans voir les interactions cachées. **(Obstacle de proportionnalité)**
-- Beaucoup cherchaient une cause unique, alors que la panne venait de l'enchaînement de plusieurs facteurs. **(Obstacle de linéarité)**
+Ces blocages ne sont pas des fautes individuelles. Ce sont des 
+**obstacles cognitifs** au sens de Bachelard (1938) et d'Astolfi (1997) : 
+des formes de raisonnement qui fonctionnent dans la vie quotidienne 
+(une cause produit un effet proportionnel et immédiat) mais qui deviennent 
+des sources d'erreur systématique face à des systèmes complexes.
 
-Ces blocages ne sont pas des "fautes". Ce sont des **obstacles cognitifs** – des façons de penser qui fonctionnent dans la vie quotidienne (une cause → un effet) mais qui deviennent des pièges face à des systèmes complexes.
+La capacité à identifier ces obstacles — les nommer, les catégoriser, 
+les anticiper — est devenue le cœur de mon expertise de formateur.
 
-**Le formateur, c'est celui qui apprend à voir ces obstacles.**
+## Du geste technique à la médiation didactique
 
-## Du geste à la médiation
+Cette évolution a transformé ma relation à la technique. Je ne me définis 
+plus comme un technicien qui transmet des gestes. Je me situe dans une 
+posture de **médiation** : entre le système technique et l'apprenant, le 
+formateur traduit.
 
-Aujourd'hui, ma relation à la technique a changé.
+- Traduire le signal du capteur en une question : « Que penses-tu qu'il 
+  se passe dans le système en ce moment ? »
+- Traduire l'erreur de programmation en une piste d'investigation : 
+  « Et si tu vérifiait cette variable — qu'est-ce que ça changerait ? »
+- Traduire la panne en opportunité d'apprentissage : « Qu'est-ce que 
+  cette anomalie nous apprend sur le fonctionnement du système ? »
 
-Je ne me définis plus comme un technicien qui transmet des gestes. Je suis un **médiateur** – quelqu'un qui se tient entre la machine et l'apprenant, et qui traduit.
+Le formateur, dans cette posture, ne donne pas la solution. Il crée les 
+conditions pour que l'apprenant **construise** la solution — ce que 
+Brousseau (1998) appelle une situation de validation.
 
-- Je traduis le signal du capteur en une question : « Que penses-tu qu'il se passe ? »
-- Je traduis l'erreur de programmation en une piste : « Et si tu vérifiais cette variable ? »
-- Je traduis la panne en opportunité : « Qu'est-ce que cette panne nous apprend sur le système ? »
+## Ce que cette expérience apporte à la recherche
 
-**Le formateur ne donne pas la solution. Il donne les clés pour que l'apprenant trouve la solution lui-même.**
+Toute cette expérience de terrain nourrit aujourd'hui le projet doctoral.
 
-## Ce que cela signifie pour ma recherche
+La Base de Données Intelligente (BDI) que je développe est une tentative 
+de **formaliser les compétences d'observation du formateur** — les rendre 
+explicites, mesurables et reproductibles :
 
-Toute cette expérience de terrain nourrit aujourd'hui mon projet doctoral.
+- Identifier les obstacles récurrents à partir des traces d'apprentissage
+- Détecter les moments où l'apprenant dévie de la trajectoire attendue
+- Proposer un étayage adapté au type d'obstacle et au niveau de 
+  l'apprenant
 
-La Base de Données Intelligente (BDI) que je développe est une tentative de **modéliser cet œil du formateur** :
-
-- Identifier les obstacles récurrents
-- Détecter les moments où l'apprenant dérive
-- Proposer une aide adaptée, ni trop tôt ni trop tard
-
-**L'informatique ne remplace pas l'humain. Elle lui donne les moyens d'être présent là où il ne peut pas être – à l'intérieur de la tête de chaque apprenant, à chaque instant.**
+La BDI ne remplace pas le formateur humain. Elle prolonge sa capacité 
+d'observation en rendant visibles des patterns qui, sans instrumentation, 
+resteraient enfouis dans l'intuition professionnelle.
 
 ## En résumé
 
-| Avant (technicien) | Après (formateur-chercheur) |
-|--------------------|----------------------------|
-| Je regarde la machine | Je regarde l'apprenant |
-| Je donne la solution | Je donne les clés |
-| Je corrige l'erreur | J'analyse l'obstacle |
-| Je transmets un geste | Je construis une médiation |
-| Je répare la panne | J'accompagne le dépassement |
+| Posture de technicien | Posture de formateur-chercheur |
+|-----------------------|--------------------------------|
+| Observer la machine et ses paramètres | Observer l'apprenant et ses raisonnements |
+| Donner la solution correcte | Créer les conditions de la recherche de solution |
+| Corriger l'erreur technique | Analyser l'obstacle cognitif sous-jacent |
+| Transmettre un geste professionnel | Construire une médiation didactique |
+| Réparer la panne | Accompagner le dépassement de l'obstacle |
 
-**Devenir formateur, ce n'est pas ajouter un savoir à un autre. C'est changer de posture tout entière.**
+Cette transition — du geste technique à la médiation didactique, de la 
+maîtrise du système à la compréhension de celui qui l'apprend — est ce 
+qui relie un parcours de technicien-formateur à un projet doctoral en 
+sciences de l'éducation. C'est ce que Schön (1983) appelle le passage 
+du « savoir-dans-l'action » au « savoir-sur-l'action » : le praticien 
+devient chercheur lorsqu'il prend sa propre pratique comme objet 
+d'investigation.
 
 ---
 
-📚 *Article précédent : « La machine ne fait rien sans le cerveau numérique »*  
-📚 *Article suivant : Phase 2 – « Concevoir des dispositifs qui n'automatisent pas » – à venir.*
+*Cet article retrace la genèse du questionnement de recherche à partir 
+de l'expérience professionnelle. Pour le cadre épistémologique et 
+théorique, voir la série « De la productique à la didactique ».*
 
-*Cette série d'articles documente ma trajectoire personnelle. Pour approfondir les concepts scientifiques (obstacles cognitifs, étayage, médiation), consultez la section Expert.*
+*Références :*
+- *Astolfi, J.-P. (1997). L'erreur, un outil pour enseigner. ESF.*
+- *Bachelard, G. (1938). La formation de l'esprit scientifique. Vrin.*
+- *Brousseau, G. (1998). Théorie des situations didactiques. La Pensée 
+  Sauvage.*
+- *Schön, D. A. (1983). The Reflective Practitioner: How Professionals 
+  Think in Action. Basic Books.*
