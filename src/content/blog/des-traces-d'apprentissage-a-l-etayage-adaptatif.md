@@ -1,9 +1,13 @@
 ---
 title: "Des traces d'apprentissage à l'étayage adaptatif : le rôle de la BDI"
-description: "La Base de Données Intelligente ne se contente pas de collecter des données. Elle transforme les traces d'apprentissage en informations exploitables pour l'étayage. Cet article décrit cette chaîne de transformation et ses implications didactiques."
+description: "La BDI transforme les traces d'apprentissage en informations exploitables pour l'étayage. Cet article décrit cette chaîne de transformation et ses implications didactiques."
 pubDate: 2026-05-05
 author: "A. Elbah"
-keywords: "BDI, traces d'apprentissage, learning analytics, étayage adaptatif, obstacles cognitifs, Rabardel, Bruner, séries temporelles"
+categories: ["BDI et données", "Didactique des systèmes complexes"]
+tags: ["BDI", "traces", "learning analytics", "étayage", "Bruner", "Rabardel", "Siemens"]
+series: null
+seriesOrder: null
+readingTime: 7
 niveau: "expert"
 ---
 
