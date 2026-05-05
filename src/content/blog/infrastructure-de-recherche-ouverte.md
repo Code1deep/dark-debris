@@ -9,10 +9,20 @@ niveau: "expert"
 
 # Une infrastructure de recherche ouverte : architecture et principes
 
+## Une infrastructure, pas un produit
+
+Une question revient souvent :  
+**« Quel est votre produit ? »**  
+Mais cette question repose sur un malentendu :  
+Ce dispositif n’est ni un logiciel commercial ni un service payant.  
+C’est une **infrastructure de recherche**.  
+
+Comme un laboratoire avec ses équipements (lasers, microscopes, séquenceurs), cette infrastructure utilise des dépôts GitHub, scripts Python, configurations Docker, et schémas d’architecture pour rendre la recherche possible.  
+Elle n’est pas l’objet de la recherche, mais le support qui permet de la réaliser.
+
 ## Ce que fait cette infrastructure
 
-Ce dispositif n'est pas un logiciel à commercialiser. C'est 
-l'équivalent, pour une recherche en technologie éducative, de ce que 
+C'est l'équivalent, pour une recherche en technologie éducative, de ce que 
 représente un banc d'essai pour un laboratoire de physique : 
 **l'ensemble des instruments qui rendent l'investigation possible**.
 
