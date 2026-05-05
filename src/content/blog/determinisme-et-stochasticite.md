@@ -1,9 +1,13 @@
 ---
 title: "Déterminisme et stochasticité : apprendre à raisonner sous incertitude"
-description: "Les systèmes complexes ne sont pas déterministes. L'apprenant doit passer d'un raisonnement fondé sur la certitude (une cause, un effet prévisible) à un raisonnement fondé sur la probabilité et la tolérance. Cet article explore ce que cette transition implique pour la didactique."
+description: "Les systèmes complexes ne sont pas déterministes. L'apprenant doit passer d'un raisonnement fondé sur la certitude à un raisonnement fondé sur la probabilité."
 pubDate: 2026-05-04
 author: "A. Elbah"
-keywords: "stochasticité, incertitude, déterminisme, systèmes complexes, tolérance, séries temporelles, BDI, Prigogine, Morin, didactique"
+categories: ["BDI et données", "Obstacles cognitifs"]
+tags: ["stochasticité", "incertitude", "déterminisme", "Prigogine", "Morin", "Kahneman", "BDI"]
+series: null
+seriesOrder: null
+readingTime: 7
 niveau: "expert"
 ---
 
