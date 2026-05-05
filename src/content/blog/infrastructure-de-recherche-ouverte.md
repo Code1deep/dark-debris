@@ -1,11 +1,13 @@
 ---
-title: "Une infrastructure de recherche ouverte : dépôts publics modulaires, conçus pour permettre l'itération DBR, la reproductibilité et la science ouverte. architecture et principes"
+title: "Une infrastructure de recherche ouverte : dépôts publics modulaires, conçus pour permettre l'itération DBR, la reproductibilité et la science ouverte"
 description: "Le dispositif de recherche repose sur six dépôts publics modulaires, conçus pour permettre l'itération DBR, la reproductibilité et la science ouverte. Cet article en décrit l'architecture et les principes."
 pubDate: 2026-05-04
 author: "A. Elbah"
 keywords: "infrastructure de recherche, science ouverte, GitHub, Zenodo, DOI, reproductibilité, modularité, DBR, BDI, Living Lab"
 niveau: "expert"
 ---
+
+# Une infrastructure de recherche ouverte : architecture et principes
 
 ## Une infrastructure, pas un produit
 
@@ -15,19 +17,11 @@ Le dispositif décrit ici n'est pas un produit, un logiciel à
 commercialiser ou un service à vendre. **C'est une infrastructure de 
 recherche.**
 
-Un laboratoire de phys
-« Quel est votre produit ? ». Cette question repose sur un malentendu. 
-Le dispositif décrit ici n'est pas un produit, un logiciel à 
-commercialiser ou un service à vendre. **C'est une infrastructure de 
-recherche.**
-
 Un laboratoire de physique dispose d'instruments (lasers, capteurs, 
 enceintes). Un laboratoire de biologie dispose de microscopes, 
 d'éprouvettes, de séquenceurs. Cetteique dispose d'instruments (lasers, capteurs, 
 enceintes). Un laboratoire de biologie dispose de microscopes, 
-d'éprouvettes, de séquenceurs. Cette recherche doctorale dispose de 
-dépôts GitHub, de scripts Python, de configurations Docker, de schémas 
-d'architecture.
+d'éprouvettes, de séquenceurs. 
 
 L'infrastructure est recherche doctorale dispose de 
 dépôts GitHub, de scripts Python, de configurations Docker, de schémas 
