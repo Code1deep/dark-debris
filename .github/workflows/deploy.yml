@@ -13,24 +13,24 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
-      - name: Setup Node.js
+
+      - name: Setup Node 22
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'npm'
-      
+          cache: npm
+
+      # ⭐ LA LIGNE LA PLUS IMPORTANTE
       - name: Install dependencies
-        run: |
-          rm -f package-lock.json
-          npm install --legacy-peer-deps
-      
+        run: npm ci
+
       - name: Build site
         run: npm run build
-      
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -42,6 +42,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
