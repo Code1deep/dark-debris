@@ -1,9 +1,13 @@
 ---
 title: "De l'usine au Living Lab : ce que la science des flux apporte à la didactique"
-description: "L'opération cognitive que la productique demande au technicien — traduire un phénomène en donnée, une donnée en modèle, un modèle en action — est exactement celle que l'apprenant doit accomplir face à un système complexe."
+description: "L'opération cognitive que la productique demande au technicien — traduire un phénomène en donnée, une donnée en modèle, un modèle en action — est celle que l'apprenant doit accomplir face à un système complexe."
 pubDate: 2026-05-03
 author: "A. Elbah"
-keywords: "didactique, systèmes complexes, flux, apprentissage, obstacles cognitifs, BDI, Rabardel, genèse instrumentale, abstraction, Living Lab"
+categories: ["Didactique des systèmes complexes", "Obstacles cognitifs"]
+tags: ["triple traduction", "obstacles", "Rabardel", "Brousseau", "Living Lab", "aquaponie"]
+series: "De la productique à la didactique"
+seriesOrder: 3
+readingTime: 8
 niveau: "expert"
 ---
 
