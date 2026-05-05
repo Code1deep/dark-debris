@@ -1,10 +1,14 @@
 ---
-title: "Trois obstacles qui bloquent l'apprentissage des systèmes complexes"
-description: "Linéarité, temporalité, proportionnalité – ces trois obstacles cognitifs sont universels. Les identifier, c'est permettre l'étayage adapté."
-pubDate: 2026-04-27
+title: "Les obstacles cognitifs comme invariants : une hypothèse de transférabilité"
+description: "Les obstacles de linéarité, de temporalité et de proportionnalité se manifestent de manière structurellement identique dans des domaines très différents. Cette invariance fonde la transférabilité des résultats."
+pubDate: 2026-05-04
 author: "A. Elbah"
-keywords: "obstacles cognitifs, Bachelard, Astolfi, linéarité, temporalité, proportionnalité, étayage, DBR"
-niveau: "intermediaire"
+categories: ["Obstacles cognitifs", "Didactique des systèmes complexes"]
+tags: ["linéarité", "temporalité", "proportionnalité", "invariants", "Bachelard", "Astolfi", "transférabilité"]
+series: "Agnosticisme technologique"
+seriesOrder: 2
+readingTime: 7
+niveau: "expert"
 ---
 
 # Trois obstacles qui bloquent l’apprentissage des systèmes complexes
