@@ -7,18 +7,6 @@ keywords: "infrastructure de recherche, science ouverte, GitHub, Zenodo, DOI, re
 niveau: "expert"
 ---
 
-# Une infrastructure de recherche ouverte : architecture et principes
-author: "A. Elbah"
-keywords: "infrastructure de recherche, science ouverte, GitHub, Zenodo, DOI, reproductibilité, modularité, DBR, BDI, Living Lab"
-niveau: "expert"
----
-
-# Une infrastructure de recherche ouverte : architecture et principes
-
-## Une infrastructure, pas un produit
-
-Une question revient régulièrement lorsque l'on présente ce travail : 
-
 ## Une infrastructure, pas un produit
 
 Une question revient régulièrement lorsque l'on présente ce travail : 
