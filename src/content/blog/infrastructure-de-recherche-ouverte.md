@@ -1,9 +1,13 @@
 ---
 title: "Une infrastructure de recherche ouverte : architecture et principes"
-description: "Le dispositif de recherche repose sur six dépôts publics modulaires, conçus pour permettre l'itération DBR, la reproductibilité et la science ouverte. Cet article en décrit l'architecture."
+description: "Le dispositif repose sur six dépôts publics modulaires, conçus pour l'itération DBR, la reproductibilité et la science ouverte."
 pubDate: 2026-05-04
 author: "A. Elbah"
-keywords: "infrastructure de recherche, science ouverte, GitHub, Zenodo, DOI, reproductibilité, modularité, DBR, BDI, Living Lab"
+categories: ["BDI et données", "Méthodologie DBR"]
+tags: ["infrastructure", "GitHub", "Zenodo", "science ouverte", "reproductibilité", "modularité"]
+series: null
+seriesOrder: null
+readingTime: 5
 niveau: "expert"
 ---
 
