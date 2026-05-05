@@ -1,9 +1,13 @@
 ---
 title: "Pour une didactique des flux : vers un apprentissage des systèmes complexes instrumenté par les données"
-description: "Les approches didactiques centrées sur l'objet peinent face aux systèmes complexes, où ce qui compte n'est pas l'entité mais la relation, le flux, la rétroaction. Cet article propose trois piliers pour une didactique adaptée à ces enjeux."
+description: "Les approches didactiques centrées sur l'objet peinent face aux systèmes complexes. Cet article propose trois piliers pour une didactique adaptée à ces enjeux."
 pubDate: 2026-05-04
 author: "A. Elbah"
-keywords: "didactique des flux, systèmes complexes, pensée systémique, modélisation, obstacles cognitifs, BDI, instrumentation, Jacobson, Hmelo-Silver, Rabardel"
+categories: ["Didactique des systèmes complexes", "Épistémologie et productique"]
+tags: ["didactique", "flux", "modélisation", "Jacobson", "Hmelo-Silver", "Norman", "Rabardel"]
+series: null
+seriesOrder: null
+readingTime: 9
 niveau: "expert"
 ---
 
