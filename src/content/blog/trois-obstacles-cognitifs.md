@@ -1,14 +1,14 @@
 ---
-title: "Les obstacles cognitifs comme invariants : une hypothèse de transférabilité"
-description: "Les obstacles de linéarité, de temporalité et de proportionnalité se manifestent de manière structurellement identique dans des domaines très différents. Cette invariance fonde la transférabilité des résultats."
+title: "Trois obstacles qui bloquent l'apprentissage des systèmes complexes"
+description: "Linéarité, temporalité, proportionnalité : trois formes de raisonnement qui fonctionnent au quotidien mais deviennent des pièges face à la complexité."
 pubDate: 2026-05-04
 author: "A. Elbah"
-categories: ["Obstacles cognitifs", "Didactique des systèmes complexes"]
-tags: ["linéarité", "temporalité", "proportionnalité", "invariants", "Bachelard", "Astolfi", "transférabilité"]
-series: "Agnosticisme technologique"
-seriesOrder: 2
-readingTime: 7
-niveau: "expert"
+categories: ["Obstacles cognitifs"]
+tags: ["linéarité", "temporalité", "proportionnalité", "aquaponie", "Bachelard", "Astolfi"]
+series: null
+seriesOrder: null
+readingTime: 6
+niveau: "initiation"
 ---
 
 # Trois obstacles qui bloquent l’apprentissage des systèmes complexes
