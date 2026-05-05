@@ -1,9 +1,13 @@
 ---
 title: "Le flux comme invariant structurel : une lecture transversale"
-description: "Qu'il s'agisse de mécanique, d'hydraulique, d'acoustique ou de réseaux numériques, la notion de flux constitue un invariant structurel. Cette transversalité fonde l'approche agnostique de la Base de Données Intelligente."
+description: "Qu'il s'agisse de mécanique, d'hydraulique, d'acoustique ou de réseaux numériques, la notion de flux constitue un invariant structurel. Cette transversalité fonde l'approche agnostique de la BDI."
 pubDate: 2026-05-03
 author: "A. Elbah"
-keywords: "flux, invariant structurel, séries temporelles, transversalité, systèmes complexes, BDI, InfluxDB, Morin, Le Moigne"
+categories: ["Épistémologie et productique", "Didactique des systèmes complexes"]
+tags: ["flux", "invariant", "séries temporelles", "Morin", "Le Moigne", "transversalité"]
+series: "De la productique à la didactique"
+seriesOrder: 2
+readingTime: 7
 niveau: "expert"
 ---
 
