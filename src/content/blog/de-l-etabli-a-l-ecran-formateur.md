@@ -3,7 +3,11 @@ title: "De l'établi à l'écran : ce qui change quand on devient formateur"
 description: "Maîtriser un métier technique ne suffit pas pour l'enseigner. Ce récit retrace la transition du technicien au formateur, et la découverte des obstacles cognitifs comme objets d'étude."
 pubDate: 2026-05-04
 author: "A. Elbah"
-keywords: "formateur, technicien, transition, obstacles cognitifs, posture réflexive, Schön, médiation, BDI, accompagnement, productique"
+categories: ["Parcours et réflexivité", "Obstacles cognitifs"]
+tags: ["formateur", "Schön", "posture réflexive", "médiation", "obstacles"]
+series: null
+seriesOrder: null
+readingTime: 6
 niveau: "initiation"
 ---
 
