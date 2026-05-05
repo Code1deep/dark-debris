@@ -1,4 +1,6 @@
 ---
+
+
 title: "Une infrastructure de recherche ouverte : dépôts publics modulaires, conçus pour permettre l'itération DBR, la reproductibilité et la science ouverte. architecture et principes"
 description: "Le dispositif de recherche repose sur six dépôts publics modulaires, conçus pour permettre l'itération DBR, la reproductibilité et la science ouverte. Cet article en décrit l'architecture et les principes."
 pubDate: 2026-05-04 Cet article en décrit l'architecture et les principes."
