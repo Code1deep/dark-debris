@@ -21,7 +21,7 @@ const categories = [
 
   <!-- Filtres par catégorie -->
   <nav class="flex flex-wrap gap-2 mb-10">
-    {categories.map((cat) => (
+    {(categories ?? []).map((cat) => (
       <a href={`/categories/${cat.slug}`}
          class={`text-sm font-medium px-3 py-1 rounded-full ${cat.color} hover:opacity-80`}>
         {cat.label}
