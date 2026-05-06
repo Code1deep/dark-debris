@@ -2,53 +2,50 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-/* 🔵 Astro exécute ceci en environnement isolé */
+/* Routes statiques */
 export async function getStaticPaths() {
-  const categoryMap = {
-    epistemologie: 'epistemologie-et-productique',
-    'obstacles-cognitifs': 'obstacles-cognitifs',
-    'methodologie-dbr': 'methodologie-dbr',
-    'bdi-et-donnees': 'bdi-et-donnees',
-    parcours: 'parcours-et-reflexivite',
-    'didactique-systemes': 'didactique-des-systemes-complexes',
-  };
-
-  return Object.keys(categoryMap).map((slug) => ({
-    params: { category: slug },
-  }));
+  return [
+    { params: { category: 'epistemologie' } },
+    { params: { category: 'obstacles-cognitifs' } },
+    { params: { category: 'methodologie-dbr' } },
+    { params: { category: 'bdi-et-donnees' } },
+    { params: { category: 'parcours' } },
+    { params: { category: 'didactique-systemes' } },
+  ];
 }
 
-/* 🔵 Ici on peut redéclarer (séparément !) */
-const categoryMap = {
-  epistemologie: 'epistemologie-et-productique',
-  'obstacles-cognitifs': 'obstacles-cognitifs',
-  'methodologie-dbr': 'methodologie-dbr',
-  'bdi-et-donnees': 'bdi-et-donnees',
-  parcours: 'parcours-et-reflexivite',
-  'didactique-systemes': 'didactique-des-systemes-complexes',
+/* Mapping uniquement pour affichage humain */
+const labels = {
+  epistemologie: 'Épistémologie et productique',
+  'obstacles-cognitifs': 'Obstacles cognitifs',
+  'methodologie-dbr': 'Méthodologie DBR',
+  'bdi-et-donnees': 'BDI et données',
+  parcours: 'Parcours et réflexivité',
+  'didactique-systemes': 'Didactique des systèmes complexes',
 };
 
 const { category } = Astro.params;
-const categoryName = categoryMap[category] ?? category;
+const categoryLabel = labels[category] ?? category;
 
+/* 🔥 récupération articles */
 const allPosts = await getCollection('blog');
 
 const posts = allPosts
-  .filter((post) => {
-    const cats = post.data.categories ?? [];
-    return Array.isArray(cats) && cats.includes(category);
-  })
+  .filter(post => post.data.categories?.includes(category))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+console.log("CATEGORY PAGE:", category);
+console.log("FOUND POSTS:", posts.length);
 ---
 
-<BaseLayout title={categoryName} description={`Articles sur : ${categoryName}`}>
-  <h1 class="text-3xl font-bold text-blue-800 mb-2">{categoryName}</h1>
+<BaseLayout title={categoryLabel}>
+  <h1 class="text-3xl font-bold text-blue-800 mb-2">{categoryLabel}</h1>
   <p class="text-gray-500 mb-8">
     {posts.length} article{posts.length > 1 ? 's' : ''}
   </p>
 
   <ul class="space-y-6">
-    {posts.map((post) => (
+    {posts.map(post => (
       <li class="border-b pb-4">
         <a href={`/blog/${post.slug}`} class="text-xl font-semibold text-blue-700 hover:underline">
           {post.data.title}
