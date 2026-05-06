@@ -1,26 +1,22 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection, z } from 'astro:content';
 
 const blog = defineCollection({
-  type: "content",
+  type: 'content',
   schema: z.object({
     title: z.string(),
-    description: z.string().optional(),
-    pubDate: z.coerce.date(),
-    author: z.string().default("A. Elbah"),
+    description: z.string(),
+    pubDate: z.date(),
+    author: z.string(),
 
-    // catégories & tags
-    categories: z.array(z.string()).default([]),
-    tags: z.array(z.string()).default([]),
+    /* 🔥 LE CHAMP QUI MANQUE */
+    categories: z.array(z.string()),
 
-    // séries d’articles
-    series: z.string().optional(),
-    seriesOrder: z.number().optional(),
-
-    // métadonnées lecture
+    /* champs optionnels */
+    tags: z.array(z.string()).optional(),
+    series: z.string().nullable().optional(),
+    seriesOrder: z.number().nullable().optional(),
     readingTime: z.number().optional(),
-
-    // niveau article
-    niveau: z.enum(["initiation", "expert"]).default("expert"),
+    niveau: z.string().optional(),
   }),
 });
 
