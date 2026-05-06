@@ -2,7 +2,24 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-const categoryMap: Record<string, string> = {
+// ⚠️ Fonction exécutée isolément par Astro
+export async function getStaticPaths() {
+  const categoryMap = {
+    'epistemologie': 'Épistémologie et productique',
+    'obstacles-cognitifs': 'Obstacles cognitifs',
+    'methodologie-dbr': 'Méthodologie DBR',
+    'bdi-et-donnees': 'BDI et données',
+    'parcours': 'Parcours et réflexivité',
+    'didactique-systemes': 'Didactique des systèmes complexes',
+  };
+
+  return Object.keys(categoryMap).map((slug) => ({
+    params: { category: slug },
+  }));
+}
+
+// ⚠️ Ici on peut redéclarer pour la page
+const categoryMap = {
   'epistemologie': 'Épistémologie et productique',
   'obstacles-cognitifs': 'Obstacles cognitifs',
   'methodologie-dbr': 'Méthodologie DBR',
@@ -10,12 +27,6 @@ const categoryMap: Record<string, string> = {
   'parcours': 'Parcours et réflexivité',
   'didactique-systemes': 'Didactique des systèmes complexes',
 };
-
-export function getStaticPaths() {
-  return Object.keys(categoryMap).map((slug) => ({
-    params: { category: slug },
-  }));
-}
 
 const { category } = Astro.params;
 const categoryName = categoryMap[category] || category;
