@@ -11,8 +11,7 @@ readingTime: 7
 niveau: "expert"
 ---
 
-# Le taux d'anticipation : mesurer la dimension temporelle du 
-raisonnement systémique
+# Le taux d'anticipation : mesurer la dimension temporelle du raisonnement systémique
 
 ## Le problème : la justesse ne suffit pas
 
