@@ -3,7 +3,7 @@ title: "Pour une didactique des flux : vers un apprentissage des systèmes compl
 description: "Les approches didactiques centrées sur l'objet peinent face aux systèmes complexes. Cet article propose trois piliers pour une didactique adaptée à ces enjeux."
 pubDate: 2026-05-04
 author: "A. Elbah"
-categories: ["didactique-des-systèmes-complexes", "epistemologie-et-productique"]
+categories: ["didactique-des-systemes-complexes", "epistemologie-et-productique"]
 tags: ["didactique", "flux", "modélisation", "Jacobson", "Hmelo-Silver", "Norman", "Rabardel"]
 series: null
 seriesOrder: null
