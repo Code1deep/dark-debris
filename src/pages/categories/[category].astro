@@ -5,12 +5,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 /* 🔵 Astro exécute ceci en environnement isolé */
 export async function getStaticPaths() {
   const categoryMap = {
-    epistemologie: 'Épistémologie et productique',
-    'obstacles-cognitifs': 'Obstacles cognitifs',
-    'methodologie-dbr': 'Méthodologie DBR',
-    'bdi-et-donnees': 'BDI et données',
-    parcours: 'Parcours et réflexivité',
-    'didactique-systemes': 'Didactique des systèmes complexes',
+    epistemologie: 'epistemologie-et-productique',
+    'obstacles-cognitifs': 'obstacles-cognitifs',
+    'methodologie-dbr': 'methodologie-dbr',
+    'bdi-et-donnees': 'bdi-et-donnees',
+    parcours: 'parcours-et-reflexivite',
+    'didactique-systemes': 'didactique-des-systemes-complexes',
   };
 
   return Object.keys(categoryMap).map((slug) => ({
@@ -20,12 +20,12 @@ export async function getStaticPaths() {
 
 /* 🔵 Ici on peut redéclarer (séparément !) */
 const categoryMap = {
-  epistemologie: 'Épistémologie et productique',
-  'obstacles-cognitifs': 'Obstacles cognitifs',
-  'methodologie-dbr': 'Méthodologie DBR',
-  'bdi-et-donnees': 'BDI et données',
-  parcours: 'Parcours et réflexivité',
-  'didactique-systemes': 'Didactique des systèmes complexes',
+  epistemologie: 'epistemologie-et-productique',
+  'obstacles-cognitifs': 'obstacles-cognitifs',
+  'methodologie-dbr': 'methodologie-dbr',
+  'bdi-et-donnees': 'bdi-et-donnees',
+  parcours: 'parcours-et-reflexivite',
+  'didactique-systemes': 'didactique-des-systemes-complexes',
 };
 
 const { category } = Astro.params;
