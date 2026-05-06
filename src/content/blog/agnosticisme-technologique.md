@@ -3,7 +3,7 @@ title: "L'architecture agnostique de la BDI : traiter le flux, pas la substance"
 description: "La BDI ne distingue pas la nature physique des données qu'elle traite. Cette propriété structurelle — l'agnosticisme technologique — est une condition de transférabilité des résultats."
 pubDate: 2026-05-04
 author: "A. Elbah"
-categories: ["bdi-et-donnees", "epistemologie-productique"]
+categories: ["bdi-et-donnees", "epistemologie"]
 tags: ["BDI", "agnosticisme", "InfluxDB", "Grafana", "pipeline", "séries temporelles", "Le Moigne"]
 series: "Agnosticisme technologique"
 seriesOrder: 1

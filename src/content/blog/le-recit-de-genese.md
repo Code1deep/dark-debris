@@ -3,7 +3,7 @@ title: "De la productique à la didactique : genèse d'un questionnement de rech
 description: "La productique articule mécanique, informatique, automatisme et algorithmique. Ce n'est pas une science de l'objet — c'est une science du flux. Ce déplacement de regard est à l'origine du projet doctoral."
 pubDate: 2026-05-03
 author: "A. Elbah"
-categories: ["epistemologie-et-productique", "parcours-et-reflexivite"]
+categories: ["epistemologie", "parcours"]
 tags: ["productique", "flux", "parcours", "ENSET", "transposition"]
 series: "De la productique à la didactique"
 seriesOrder: 1

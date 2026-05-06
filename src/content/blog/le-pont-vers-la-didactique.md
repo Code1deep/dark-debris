@@ -3,7 +3,7 @@ title: "De l'usine au Living Lab : ce que la science des flux apporte à la dida
 description: "L'opération cognitive que la productique demande au technicien — traduire un phénomène en donnée, une donnée en modèle, un modèle en action — est celle que l'apprenant doit accomplir face à un système complexe."
 pubDate: 2026-05-03
 author: "A. Elbah"
-categories: ["didactique-des-systemes-complexes", "obstacles-cognitifs"]
+categories: ["didactique-systemes", "obstacles-cognitifs"]
 tags: ["triple traduction", "obstacles", "Rabardel", "Brousseau", "Living Lab", "aquaponie"]
 series: "De la productique à la didactique"
 seriesOrder: 3

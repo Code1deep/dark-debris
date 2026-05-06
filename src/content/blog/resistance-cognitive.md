@@ -3,7 +3,7 @@ title: "La résistance cognitive comme propriété structurelle : une lecture ba
 description: "L'obstacle cognitif n'est pas une absence de savoir : c'est la présence d'un savoir actif, organisé et résistant. Comprendre cette résistance change la manière de concevoir l'étayage."
 pubDate: 2026-05-04
 author: "A. Elbah"
-categories: ["obstacles-cognitifs", "didactique-des-systemes-complexes"]
+categories: ["obstacles-cognitifs", "didactique-systemes"]
 tags: ["résistance", "Bachelard", "Astolfi", "Piaget", "Posner", "changement conceptuel", "accommodation"]
 series: null
 seriesOrder: null

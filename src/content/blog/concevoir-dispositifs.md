@@ -3,7 +3,7 @@ title: "Concevoir des dispositifs qui n'automatisent pas"
 description: "La BDI ne remplace ni l'enseignant ni la réflexion de l'apprenant. Elle crée les conditions pour que l'erreur devienne un objet d'investigation, pas une faute à corriger."
 pubDate: 2026-05-04
 author: "A. Elbah"
-categories: ["methodologie-dbr", "didactique-des-systemes-complexes"]
+categories: ["methodologie-dbr", "didactique-systemes"]
 tags: ["Rabardel", "genèse instrumentale", "artefact", "instrument", "étayage", "DBR"]
 series: null
 seriesOrder: null

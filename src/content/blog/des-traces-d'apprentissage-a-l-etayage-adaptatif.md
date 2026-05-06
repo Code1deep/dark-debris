@@ -3,7 +3,7 @@ title: "Des traces d'apprentissage à l'étayage adaptatif : le rôle de la BDI"
 description: "La BDI transforme les traces d'apprentissage en informations exploitables pour l'étayage. Cet article décrit cette chaîne de transformation et ses implications didactiques."
 pubDate: 2026-05-05
 author: "A. Elbah"
-categories: ["bdi-et-donnees", "didactique-des-systemes-complexes"]
+categories: ["bdi-et-donnees", "didactique-systemes"]
 tags: ["BDI", "traces", "learning analytics", "étayage", "Bruner", "Rabardel", "Siemens"]
 series: null
 seriesOrder: null

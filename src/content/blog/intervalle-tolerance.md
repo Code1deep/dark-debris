@@ -3,7 +3,7 @@ title: "L'intervalle de tolérance cognitif : une transposition didactique"
 description: "En productique, l'intervalle de tolérance mesure l'écart admissible. Transposé à l'apprentissage, ce concept éclaire la zone proximale de développement et le rôle de l'étayage instrumenté."
 pubDate: 2026-05-04
 author: "A. Elbah"
-categories: ["obstacles-cognitifs", "didactique-des-systemes-complexes"]
+categories: ["obstacles-cognitifs", "didactique-systemes"]
 tags: ["tolérance", "Vygotski", "ZPD", "Bachelard", "Astolfi", "étayage", "BDI"]
 series: null
 seriesOrder: null
