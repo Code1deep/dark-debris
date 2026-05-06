@@ -32,6 +32,7 @@ const { category } = Astro.params;
 const categoryName = categoryMap[category] || category;
 
 const allPosts = await getCollection('blog');
+
 const posts = allPosts
   .filter((post) => (post.data.categories ?? []).includes(category))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
