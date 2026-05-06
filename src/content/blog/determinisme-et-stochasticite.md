@@ -3,8 +3,8 @@ title: "Déterminisme et stochasticité : apprendre à raisonner sous incertitud
 description: "Les systèmes complexes ne sont pas déterministes. L'apprenant doit passer d'un raisonnement fondé sur la certitude à un raisonnement fondé sur la probabilité."
 pubDate: 2026-05-04
 author: "A. Elbah"
-categories: ["BDI et données", "Obstacles cognitifs"]
-tags: ["stochasticité", "incertitude", "déterminisme", "Prigogine", "Morin", "Kahneman", "BDI"]
+categories: ["bdi-et-donnees", "obstacles-cognitifs"]
+tags: ["stochasticite", "incertitude", "determinisme", "Prigogine", "Morin", "Kahneman", "BDI"]
 series: null
 seriesOrder: null
 readingTime: 7
