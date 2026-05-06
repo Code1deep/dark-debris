@@ -3,7 +3,7 @@ title: "Trois obstacles qui bloquent l'apprentissage des systèmes complexes"
 description: "Linéarité, temporalité, proportionnalité : trois formes de raisonnement qui fonctionnent au quotidien mais deviennent des pièges face à la complexité."
 pubDate: 2026-05-04
 author: "A. Elbah"
-categories: ["Obstacles cognitifs"]
+categories: ["obstacles-cognitifs"]
 tags: ["linéarité", "temporalité", "proportionnalité", "aquaponie", "Bachelard", "Astolfi"]
 series: null
 seriesOrder: null

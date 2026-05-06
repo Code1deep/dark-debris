@@ -3,7 +3,7 @@ title: "Le taux d'anticipation : mesurer la dimension temporelle du raisonnement
 description: "Face à un système complexe, la qualité du raisonnement ne se mesure pas seulement à la justesse de la réponse, mais au moment où elle est produite. Le taux d'anticipation est un indicateur qui capture cette dimension temporelle."
 pubDate: 2026-05-05
 author: "A. Elbah"
-categories: ["BDI et données", "Obstacles cognitifs"]
+categories: ["bdi-et-donnees", "obstacles-cognitifs"]
 tags: ["anticipation", "KPI", "temporalité", "BDI", "étayage", "séries temporelles"]
 series: null
 seriesOrder: null

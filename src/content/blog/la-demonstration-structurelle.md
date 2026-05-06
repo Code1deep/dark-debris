@@ -3,7 +3,7 @@ title: "Le flux comme invariant structurel : une lecture transversale"
 description: "Qu'il s'agisse de mécanique, d'hydraulique, d'acoustique ou de réseaux numériques, la notion de flux constitue un invariant structurel. Cette transversalité fonde l'approche agnostique de la BDI."
 pubDate: 2026-05-03
 author: "A. Elbah"
-categories: ["Épistémologie et productique", "Didactique des systèmes complexes"]
+categories: ["epistemologie-et-productique", "didactique-des-systemes-complexes"]
 tags: ["flux", "invariant", "séries temporelles", "Morin", "Le Moigne", "transversalité"]
 series: "De la productique à la didactique"
 seriesOrder: 2

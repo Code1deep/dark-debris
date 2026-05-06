@@ -3,7 +3,7 @@ title: "Les obstacles cognitifs comme invariants : une hypothèse de transférab
 description: "Les obstacles de linéarité, de temporalité et de proportionnalité se manifestent de manière structurellement identique dans des domaines très différents. Cette invariance cognitive est ce qui rend les résultats de la recherche potentiellement transférables au-delà de l'aquaponie."
 pubDate: 2026-05-04
 author: "A. Elbah"
-categories: ["Obstacles cognitifs", "Didactique des systèmes complexes"]
+categories: ["obstacles-cognitifs", "didactique-des-systemes-complexes"]
 tags: ["linéarité", "temporalité", "proportionnalité", "invariants", "Bachelard", "Astolfi", "transférabilité"]
 series: "Agnosticisme technologique"
 seriesOrder: 2

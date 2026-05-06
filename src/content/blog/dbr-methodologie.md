@@ -3,7 +3,7 @@ title: "La Design-Based Research comme méthodologie de production de connaissan
 description: "La DBR n'est pas une méthode de conception de produits pédagogiques. C'est une méthodologie de production de connaissances sur l'apprentissage, à partir de la conception itérative de dispositifs en milieu réel."
 pubDate: 2026-05-04
 author: "A. Elbah"
-categories: ["Méthodologie DBR"]
+categories: ["methodologie-dbr"]
 tags: ["DBR", "Brown", "Collins", "Barab", "Wang", "Hannafin", "itération", "théorisation"]
 series: null
 seriesOrder: null
