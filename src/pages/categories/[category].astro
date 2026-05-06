@@ -2,52 +2,43 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-// ⚠️ Fonction exécutée isolément par Astro
-export async function getStaticPaths() {
-  const categoryMap = {
-    'epistemologie': 'epistemologie-et-productique',
-    'obstacles-cognitifs': 'obstacles-cognitifs',
-    'methodologie-dbr': 'methodologie-dbr',
-    'bdi-et-donnees': 'bdi-et-donnees',
-    'parcours': 'parcours-et-reflexivite',
-    'didactique-systemes': 'didactique-des-systemes-complexes',
-  };
+/* 🔵 UNE SEULE définition globale */
+const categoryMap = {
+  epistemologie: 'Épistémologie et productique',
+  'obstacles-cognitifs': 'Obstacles cognitifs',
+  'methodologie-dbr': 'Méthodologie DBR',
+  'bdi-et-donnees': 'BDI et données',
+  parcours: 'Parcours et réflexivité',
+  'didactique-systemes': 'Didactique des systèmes complexes',
+};
 
+/* 🔵 Astro exécute ceci en premier */
+export async function getStaticPaths() {
   return Object.keys(categoryMap).map((slug) => ({
     params: { category: slug },
   }));
 }
 
-// ⚠️ Ici on peut redéclarer pour la page
-// slug réel utilisé dans les articles
-const categorySlugMap = {
-  'epistemologie': 'epistemologie-et-productique',
-  'obstacles-cognitifs': 'obstacles-cognitifs',
-  'methodologie-dbr': 'methodologie-dbr',
-  'bdi-et-donnees': 'bdi-et-donnees',
-  'parcours': 'parcours-et-reflexivite',
-  'didactique-systemes': 'didactique-des-systemes-complexes',
-};
+/* 🔵 Puis seulement ici Astro.params existe */
+const { category } = Astro.params;
+const categoryName = categoryMap[category] ?? category;
 
-const realCategorySlug = categorySlugMap[category];
+/* 🔵 Récupération des articles */
+const allPosts = await getCollection('blog');
 
 const posts = allPosts
   .filter((post) => {
     const cats = post.data.categories ?? [];
-    return Array.isArray(cats) && cats.includes(realCategorySlug);
+    return Array.isArray(cats) && cats.includes(category);
   })
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-const { category } = Astro.params;
-const categoryName = categoryMap[category] || category;
-
-const allPosts = await getCollection('blog');
-
 ---
 
 <BaseLayout title={categoryName} description={`Articles sur : ${categoryName}`}>
   <h1 class="text-3xl font-bold text-blue-800 mb-2">{categoryName}</h1>
-  <p class="text-gray-500 mb-8">{posts.length} article{posts.length > 1 ? 's' : ''}</p>
+  <p class="text-gray-500 mb-8">
+    {posts.length} article{posts.length > 1 ? 's' : ''}
+  </p>
 
   <ul class="space-y-6">
     {posts.map((post) => (
@@ -56,13 +47,6 @@ const allPosts = await getCollection('blog');
           {post.data.title}
         </a>
         <p class="text-sm text-gray-500 mt-1">{post.data.description}</p>
-        <div class="flex gap-2 mt-2 flex-wrap">
-          {post.data.tags.map((tag: string) => (
-            <a href={`/tags/${tag}`} class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded hover:bg-blue-100">
-              #{tag}
-            </a>
-          ))}
-        </div>
       </li>
     ))}
   </ul>
