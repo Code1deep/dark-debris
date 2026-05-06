@@ -54,9 +54,14 @@ const categories = [
         <p class="text-sm text-gray-500 mt-1">{post.data.description}</p>
 
         <div class="flex gap-2 mt-2 flex-wrap">
-          {(post.data.categories ?? []).map((cat: string) => (
-            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">{cat}</span>
-          ))}
+	  {post.data.categories?.map((cat: string) => (
+  	    <a 
+    	      href={`/categories/${cat}`}
+    	      class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded hover:bg-blue-100"
+  	    >
+    	      {categories.find(c => c.slug === cat)?.label ?? cat}
+  	    </a>
+	  ))}
         </div>
       </li>
     ))}
